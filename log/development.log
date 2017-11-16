@@ -7303,3 +7303,314 @@ NoMethodError - undefined method `events' for nil:NilClass:
   puma (3.6.0) lib/puma/server.rb:275:in `block in run'
   puma (3.6.0) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
 
+Started GET "/visitors" for ::1 at 2017-11-15 17:57:49 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (8.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  Rendered visitors/index.html.erb within layouts/application (9.0ms)
+  Rendered layouts/_messages.html.erb (2.7ms)
+Completed 200 OK in 5292ms (Views: 5178.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events.json?start=2017-10-29&end=2017-12-10&_=1510797482709" for ::1 at 2017-11-15 17:58:06 -0800
+Processing by EventsController#index as JSON
+  Parameters: {"start"=>"2017-10-29", "end"=>"2017-12-10", "_"=>"1510797482709"}
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering events/index.json.jbuilder
+  [1m[36mEvent Load (0.6ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered events/index.json.jbuilder (362.8ms)
+Completed 200 OK in 1180ms (Views: 586.9ms | ActiveRecord: 64.7ms)
+
+
+Started PATCH "/events/18?method=patch" for ::1 at 2017-11-15 17:58:13 -0800
+Processing by EventsController#update as */*
+  Parameters: {"event"=>{"id"=>"18", "start"=>"2017-11-02", "end"=>"2017-11-03"}, "method"=>"patch", "id"=>"18"}
+  [1m[36mEvent Load (0.4ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+Unpermitted parameter: id
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (0.8ms)[0m  [1m[33mUPDATE "events" SET "start" = $1, "end" = $2, "updated_at" = $3 WHERE "events"."id" = $4[0m  [["start", 2017-11-02 00:00:00 UTC], ["end", 2017-11-03 00:00:00 UTC], ["updated_at", 2017-11-16 01:58:13 UTC], ["id", 18]]
+  [1m[35m (260.0ms)[0m  [1m[35mCOMMIT[0m
+  Rendering events/update.js.erb
+  Rendered events/_event.json.jbuilder (2.7ms)
+  Rendered events/update.js.erb (396.7ms)
+Completed 200 OK in 1077ms (Views: 710.1ms | ActiveRecord: 261.9ms)
+
+
+Started PATCH "/events/18?method=patch" for ::1 at 2017-11-15 17:58:15 -0800
+Processing by EventsController#update as */*
+  Parameters: {"event"=>{"id"=>"18", "start"=>"2017-11-09", "end"=>"2017-11-10"}, "method"=>"patch", "id"=>"18"}
+  [1m[36mEvent Load (0.5ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+Unpermitted parameter: id
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (1.3ms)[0m  [1m[33mUPDATE "events" SET "start" = $1, "end" = $2, "updated_at" = $3 WHERE "events"."id" = $4[0m  [["start", 2017-11-09 00:00:00 UTC], ["end", 2017-11-10 00:00:00 UTC], ["updated_at", 2017-11-16 01:58:15 UTC], ["id", 18]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  Rendering events/update.js.erb
+  Rendered events/_event.json.jbuilder (4.0ms)
+  Rendered events/update.js.erb (273.0ms)
+Completed 200 OK in 724ms (Views: 660.0ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/visitors" for ::1 at 2017-11-15 18:01:27 -0800
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  Rendered visitors/index.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_messages.html.erb (5.3ms)
+Completed 200 OK in 31865ms (Views: 31861.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events.json?start=2017-10-29&end=2017-12-10&_=1510797727906" for ::1 at 2017-11-15 18:02:10 -0800
+Processing by EventsController#index as JSON
+  Parameters: {"start"=>"2017-10-29", "end"=>"2017-12-10", "_"=>"1510797727906"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering events/index.json.jbuilder
+  [1m[36mEvent Load (0.5ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered events/index.json.jbuilder (9.2ms)
+Completed 200 OK in 62ms (Views: 52.0ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/visitors" for ::1 at 2017-11-15 18:03:29 -0800
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  Rendered visitors/index.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_messages.html.erb (2.2ms)
+Completed 200 OK in 32656ms (Views: 32649.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events.json?start=2017-10-29&end=2017-12-10&_=1510797850939" for ::1 at 2017-11-15 18:04:15 -0800
+Processing by EventsController#index as JSON
+  Parameters: {"start"=>"2017-10-29", "end"=>"2017-12-10", "_"=>"1510797850939"}
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering events/index.json.jbuilder
+  [1m[36mEvent Load (0.6ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered events/index.json.jbuilder (5.9ms)
+Completed 200 OK in 120ms (Views: 110.4ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/events/new?_=1510797850940" for ::1 at 2017-11-15 18:04:42 -0800
+Processing by EventsController#new as JS
+  Parameters: {"_"=>"1510797850940"}
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering events/new.js.erb
+  Rendered events/_form.html.erb (5222.2ms)
+  Rendered events/_new.html.erb (5376.9ms)
+  Rendered events/new.js.erb (5478.3ms)
+Completed 200 OK in 5846ms (Views: 5785.9ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/visitors" for ::1 at 2017-11-15 18:05:30 -0800
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  Rendered visitors/index.html.erb within layouts/application (0.9ms)
+  Rendered layouts/_messages.html.erb (1.1ms)
+Completed 200 OK in 22031ms (Views: 22027.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events.json?start=2017-10-29&end=2017-12-10&_=1510797958744" for ::1 at 2017-11-15 18:06:03 -0800
+Processing by EventsController#index as JSON
+  Parameters: {"start"=>"2017-10-29", "end"=>"2017-12-10", "_"=>"1510797958744"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering events/index.json.jbuilder
+  [1m[36mEvent Load (0.6ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered events/index.json.jbuilder (230.5ms)
+Completed 200 OK in 451ms (Views: 440.3ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/events/new?_=1510797958745" for ::1 at 2017-11-15 18:06:20 -0800
+Processing by EventsController#new as JS
+  Parameters: {"_"=>"1510797958745"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering events/new.js.erb
+  Rendered events/_form.html.erb (383.6ms)
+  Rendered events/_new.html.erb (801.0ms)
+  Rendered events/new.js.erb (854.6ms)
+Completed 200 OK in 1439ms (Views: 1272.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/visitors" for ::1 at 2017-11-15 18:09:09 -0800
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  Rendered visitors/index.html.erb within layouts/application (9.5ms)
+Started GET "/visitors" for ::1 at 2017-11-15 18:09:21 -0800
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  Rendered visitors/index.html.erb within layouts/application (4.4ms)
+  Rendered layouts/_messages.html.erb (6.4ms)
+Completed 200 OK in 38003ms (Views: 37814.7ms | ActiveRecord: 0.0ms)
+
+
+  Rendered layouts/_messages.html.erb (25.6ms)
+Completed 200 OK in 27221ms (Views: 27213.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events.json?start=2017-10-29&end=2017-12-10&_=1510798194745" for ::1 at 2017-11-15 18:09:58 -0800
+Processing by EventsController#index as JSON
+  Parameters: {"start"=>"2017-10-29", "end"=>"2017-12-10", "_"=>"1510798194745"}
+  [1m[36mUser Load (4.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering events/index.json.jbuilder
+  [1m[36mEvent Load (0.8ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered events/index.json.jbuilder (13.1ms)
+Completed 200 OK in 83ms (Views: 67.2ms | ActiveRecord: 5.6ms)
+
+
+Started GET "/events/new?_=1510798194746" for ::1 at 2017-11-15 18:10:30 -0800
+Processing by EventsController#new as JS
+  Parameters: {"_"=>"1510798194746"}
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering events/new.js.erb
+  Rendered events/_form.html.erb (289.5ms)
+  Rendered events/_new.html.erb (480.9ms)
+  Rendered events/new.js.erb (556.4ms)
+Completed 200 OK in 822ms (Views: 751.2ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/visitors" for ::1 at 2017-11-15 18:10:38 -0800
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  Rendered visitors/index.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_messages.html.erb (8.2ms)
+Completed 200 OK in 23544ms (Views: 23540.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events.json?start=2017-10-29&end=2017-12-10&_=1510798267794" for ::1 at 2017-11-15 18:11:10 -0800
+Processing by EventsController#index as JSON
+  Parameters: {"start"=>"2017-10-29", "end"=>"2017-12-10", "_"=>"1510798267794"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering events/index.json.jbuilder
+  [1m[36mEvent Load (0.5ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered events/index.json.jbuilder (8.1ms)
+Completed 200 OK in 57ms (Views: 47.5ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/events/new?_=1510798267795" for ::1 at 2017-11-15 18:11:14 -0800
+Processing by EventsController#new as JS
+  Parameters: {"_"=>"1510798267795"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering events/new.js.erb
+  Rendered events/_form.html.erb (156.1ms)
+  Rendered events/_new.html.erb (268.9ms)
+  Rendered events/new.js.erb (516.0ms)
+Completed 200 OK in 814ms (Views: 761.9ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/visitors" for ::1 at 2017-11-15 18:16:42 -0800
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  Rendered visitors/index.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_messages.html.erb (1.8ms)
+Completed 200 OK in 21613ms (Views: 21609.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events.json?start=2017-10-29&end=2017-12-10&_=1510798628864" for ::1 at 2017-11-15 18:17:11 -0800
+Processing by EventsController#index as JSON
+  Parameters: {"start"=>"2017-10-29", "end"=>"2017-12-10", "_"=>"1510798628864"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering events/index.json.jbuilder
+  [1m[36mEvent Load (0.5ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered events/index.json.jbuilder (106.3ms)
+Completed 200 OK in 212ms (Views: 199.6ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/events/new?_=1510798628865" for ::1 at 2017-11-15 18:17:17 -0800
+Processing by EventsController#new as JS
+  Parameters: {"_"=>"1510798628865"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering events/new.js.erb
+  Rendered events/_form.html.erb (110.3ms)
+  Rendered events/_new.html.erb (224.1ms)
+  Rendered events/new.js.erb (300.1ms)
+Completed 200 OK in 593ms (Views: 523.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/events/18/edit?_=1510798628866" for ::1 at 2017-11-15 18:17:40 -0800
+Processing by EventsController#edit as JS
+  Parameters: {"_"=>"1510798628866", "id"=>"18"}
+  [1m[36mEvent Load (0.4ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  Rendering events/edit.js.erb
+  Rendered events/_form.html.erb (185.0ms)
+  Rendered events/_edit.html.erb (272.7ms)
+  Rendered events/edit.js.erb (450.4ms)
+Completed 200 OK in 826ms (Views: 684.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/events/new?_=1510798628867" for ::1 at 2017-11-15 18:17:53 -0800
+Processing by EventsController#new as JS
+  Parameters: {"_"=>"1510798628867"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering events/new.js.erb
+  Rendered events/_form.html.erb (167.6ms)
+  Rendered events/_new.html.erb (335.0ms)
+  Rendered events/new.js.erb (584.4ms)
+Completed 200 OK in 855ms (Views: 783.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/visitors" for ::1 at 2017-11-15 18:24:18 -0800
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  Rendered visitors/index.html.erb within layouts/application (44.0ms)
+  Rendered layouts/_messages.html.erb (1.2ms)
+Completed 200 OK in 37331ms (Views: 37239.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events.json?start=2017-10-29&end=2017-12-10&_=1510799103898" for ::1 at 2017-11-15 18:25:07 -0800
+Processing by EventsController#index as JSON
+  Parameters: {"start"=>"2017-10-29", "end"=>"2017-12-10", "_"=>"1510799103898"}
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering events/index.json.jbuilder
+  [1m[36mEvent Load (1.1ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered events/index.json.jbuilder (7.6ms)
+Completed 200 OK in 92ms (Views: 77.4ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/events/new?_=1510799103899" for ::1 at 2017-11-15 18:25:14 -0800
+Processing by EventsController#new as JS
+  Parameters: {"_"=>"1510799103899"}
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering events/new.js.erb
+  Rendered events/_form.html.erb (128.2ms)
+  Rendered events/_new.html.erb (262.3ms)
+  Rendered events/new.js.erb (389.0ms)
+Completed 200 OK in 879ms (Views: 792.7ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/visitors" for ::1 at 2017-11-15 18:25:50 -0800
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  Rendered visitors/index.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_messages.html.erb (1.0ms)
+Completed 200 OK in 36185ms (Views: 36181.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events.json?start=2017-10-29&end=2017-12-10&_=1510799193471" for ::1 at 2017-11-15 18:26:36 -0800
+Processing by EventsController#index as JSON
+  Parameters: {"start"=>"2017-10-29", "end"=>"2017-12-10", "_"=>"1510799193471"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering events/index.json.jbuilder
+  [1m[36mEvent Load (0.5ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered events/index.json.jbuilder (51.7ms)
+Completed 200 OK in 259ms (Views: 244.8ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/events/new?_=1510799193472" for ::1 at 2017-11-15 18:26:51 -0800
+Processing by EventsController#new as JS
+  Parameters: {"_"=>"1510799193472"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering events/new.js.erb
+  Rendered events/_form.html.erb (220.7ms)
+  Rendered events/_new.html.erb (319.5ms)
+  Rendered events/new.js.erb (478.6ms)
+Completed 200 OK in 911ms (Views: 860.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/events/18/edit?_=1510799193473" for ::1 at 2017-11-15 18:27:02 -0800
+Processing by EventsController#edit as JS
+  Parameters: {"_"=>"1510799193473", "id"=>"18"}
+  [1m[36mEvent Load (0.5ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  Rendering events/edit.js.erb
+  Rendered events/_form.html.erb (259.8ms)
+  Rendered events/_edit.html.erb (371.6ms)
+  Rendered events/edit.js.erb (624.8ms)
+Completed 200 OK in 1097ms (Views: 1054.5ms | ActiveRecord: 0.5ms)
+
+
