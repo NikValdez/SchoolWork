@@ -10490,3 +10490,117 @@ Completed 200 OK in 179ms (Views: 145.4ms | ActiveRecord: 18.7ms)
 Completed 200 OK in 179ms (Views: 160.7ms | ActiveRecord: 6.6ms)
 
 
+Started GET "/visitors" for ::1 at 2017-11-16 18:26:33 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  Rendered visitors/index.html.erb within layouts/application (3.5ms)
+  Rendered layouts/_messages.html.erb (13.5ms)
+Completed 200 OK in 14271ms (Views: 14145.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events.json?start=2017-10-29&end=2017-12-10&_=1510885612275" for ::1 at 2017-11-16 18:26:54 -0800
+Processing by EventsController#index as JSON
+  Parameters: {"start"=>"2017-10-29", "end"=>"2017-12-10", "_"=>"1510885612275"}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Started GET "/recurring_events.json?start=2017-10-29&end=2017-12-10&_=1510885612276" for ::1 at 2017-11-16 18:26:54 -0800
+  Rendering events/index.json.jbuilder
+  [1m[36mEvent Load (0.7ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered events/index.json.jbuilder (99.2ms)
+Completed 200 OK in 500ms (Views: 178.1ms | ActiveRecord: 35.6ms)
+
+
+Processing by RecurringEventsController#index as JSON
+  Parameters: {"start"=>"2017-10-29", "end"=>"2017-12-10", "_"=>"1510885612276"}
+  [1m[36mUser Load (3.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering recurring_events/index.json.jbuilder
+  [1m[36mRecurringEvent Load (0.9ms)[0m  [1m[34mSELECT "recurring_events".* FROM "recurring_events" WHERE "recurring_events"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered collection of recurring_events/_recurring_event.json.jbuilder [1 times] (154.0ms)
+  Rendered recurring_events/index.json.jbuilder (363.5ms)
+Completed 200 OK in 600ms (Views: 447.3ms | ActiveRecord: 34.4ms)
+
+
+Started GET "/events.json?start=2017-10-01&end=2017-11-12&_=1510885612277" for ::1 at 2017-11-16 18:27:54 -0800
+Processing by EventsController#index as JSON
+  Parameters: {"start"=>"2017-10-01", "end"=>"2017-11-12", "_"=>"1510885612277"}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Started GET "/recurring_events.json?start=2017-10-01&end=2017-11-12&_=1510885612278" for ::1 at 2017-11-16 18:27:54 -0800
+Processing by RecurringEventsController#index as JSON
+  Parameters: {"start"=>"2017-10-01", "end"=>"2017-11-12", "_"=>"1510885612278"}
+  Rendering events/index.json.jbuilder
+  [1m[36mUser Load (54.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mEvent Load (19.2ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered events/index.json.jbuilder (28.6ms)
+Completed 200 OK in 175ms (Views: 145.8ms | ActiveRecord: 20.6ms)
+
+
+  Rendering recurring_events/index.json.jbuilder
+  [1m[36mRecurringEvent Load (0.5ms)[0m  [1m[34mSELECT "recurring_events".* FROM "recurring_events" WHERE "recurring_events"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered collection of recurring_events/_recurring_event.json.jbuilder [1 times] (1.7ms)
+  Rendered recurring_events/index.json.jbuilder (12.5ms)
+Completed 200 OK in 173ms (Views: 107.3ms | ActiveRecord: 55.0ms)
+
+
+Started GET "/events.json?start=2017-10-29&end=2017-12-10&_=1510885612279" for ::1 at 2017-11-16 18:27:56 -0800
+Processing by EventsController#index as JSON
+  Parameters: {"start"=>"2017-10-29", "end"=>"2017-12-10", "_"=>"1510885612279"}
+Started GET "/recurring_events.json?start=2017-10-29&end=2017-12-10&_=1510885612280" for ::1 at 2017-11-16 18:27:56 -0800
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Processing by RecurringEventsController#index as JSON
+  Parameters: {"start"=>"2017-10-29", "end"=>"2017-12-10", "_"=>"1510885612280"}
+  Rendering events/index.json.jbuilder
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mEvent Load (3.5ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered events/index.json.jbuilder (119.5ms)
+Completed 200 OK in 224ms (Views: 206.4ms | ActiveRecord: 4.3ms)
+
+
+  Rendering recurring_events/index.json.jbuilder
+  [1m[36mRecurringEvent Load (0.7ms)[0m  [1m[34mSELECT "recurring_events".* FROM "recurring_events" WHERE "recurring_events"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered collection of recurring_events/_recurring_event.json.jbuilder [1 times] (22.5ms)
+  Rendered recurring_events/index.json.jbuilder (30.9ms)
+Completed 200 OK in 163ms (Views: 153.1ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/recurring_events.json?start=2017-11-26&end=2018-01-07&_=1510885612282" for ::1 at 2017-11-16 18:27:57 -0800
+Started GET "/events.json?start=2017-11-26&end=2018-01-07&_=1510885612281" for ::1 at 2017-11-16 18:27:57 -0800
+Processing by RecurringEventsController#index as JSON
+  Parameters: {"start"=>"2017-11-26", "end"=>"2018-01-07", "_"=>"1510885612282"}
+Processing by EventsController#index as JSON
+  Parameters: {"start"=>"2017-11-26", "end"=>"2018-01-07", "_"=>"1510885612281"}
+  [1m[36mUser Load (3.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (7.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering events/index.json.jbuilder
+  [1m[36mEvent Load (3.0ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered events/index.json.jbuilder (16.1ms)
+Completed 200 OK in 208ms (Views: 64.5ms | ActiveRecord: 10.8ms)
+
+
+  Rendering recurring_events/index.json.jbuilder
+  [1m[36mRecurringEvent Load (0.5ms)[0m  [1m[34mSELECT "recurring_events".* FROM "recurring_events" WHERE "recurring_events"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered collection of recurring_events/_recurring_event.json.jbuilder [1 times] (20.1ms)
+  Rendered recurring_events/index.json.jbuilder (32.3ms)
+Completed 200 OK in 249ms (Views: 237.4ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/events.json?start=2017-10-29&end=2017-12-10&_=1510885612283" for ::1 at 2017-11-16 18:27:59 -0800
+Processing by EventsController#index as JSON
+  Parameters: {"start"=>"2017-10-29", "end"=>"2017-12-10", "_"=>"1510885612283"}
+Started GET "/recurring_events.json?start=2017-10-29&end=2017-12-10&_=1510885612284" for ::1 at 2017-11-16 18:27:59 -0800
+Processing by RecurringEventsController#index as JSON
+  Parameters: {"start"=>"2017-10-29", "end"=>"2017-12-10", "_"=>"1510885612284"}
+  [1m[36mUser Load (10.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering recurring_events/index.json.jbuilder
+  [1m[36mRecurringEvent Load (0.5ms)[0m  [1m[34mSELECT "recurring_events".* FROM "recurring_events" WHERE "recurring_events"."user_id" = $1[0m  [["user_id", 1]]
+  [1m[36mUser Load (84.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering events/index.json.jbuilder
+  [1m[36mEvent Load (0.6ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered events/index.json.jbuilder (17.3ms)
+  Rendered collection of recurring_events/_recurring_event.json.jbuilder [1 times] (88.7ms)
+Completed 200 OK in 192ms (Views: 77.2ms | ActiveRecord: 84.7ms)
+
+
+  Rendered recurring_events/index.json.jbuilder (108.0ms)
+Completed 200 OK in 206ms (Views: 188.3ms | ActiveRecord: 10.6ms)
+
+
