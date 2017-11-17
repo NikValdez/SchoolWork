@@ -9,6 +9,7 @@
     }
 .fc-center {
     color: #fff;
+    box-shadow: none;
 }
 body .fc {
     border: 35px solid #c25975;
@@ -20,9 +21,22 @@ body .fc {
     color: #fff;
     font-weight: 100;
     border: 3px solid white;
-    &:hover{
-    
+    border-radius: 5px;
+    &:hover {
+        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
     }
+}
+.fc-toolbar > * > * {
+    background: #2dc997;
+    color: #fff;
+    font-weight: 100;
+    border: 3px solid white;
+    border-radius: 5px;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.fc .fc-toolbar > * > :first-child {
+    padding: 5px;
 }
 
 #cal-header {
