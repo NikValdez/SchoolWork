@@ -11,6 +11,7 @@ Rails.application.routes.draw do
   root to: "home#index"
 
   resources :events
+  resources :recurring_events
   resources :visitors
   
 

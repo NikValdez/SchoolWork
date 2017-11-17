@@ -11,6 +11,12 @@ gem 'turbolinks', '~> 5.x'
 gem 'jbuilder', '~> 2.0'
 gem 'devise'
 gem 'devise-bootstrapped'
+source 'https://rails-assets.org' do
+  gem 'rails-assets-fullcalendar'
+  gem 'rails-assets-momentjs'
+end
+
+gem 'ice_cube'
 
 group :development, :test do
   gem 'byebug', platform: :mri

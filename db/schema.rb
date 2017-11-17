@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171115232218) do
+ActiveRecord::Schema.define(version: 20171116213121) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -33,6 +33,17 @@ ActiveRecord::Schema.define(version: 20171115232218) do
     t.index ["user_id"], name: "index_events_on_user_id", using: :btree
   end
 
+  create_table "recurring_events", force: :cascade do |t|
+    t.string   "title"
+    t.date     "anchor"
+    t.integer  "frequency",  limit: 2, default: 0
+    t.string   "color"
+    t.datetime "created_at",                       null: false
+    t.datetime "updated_at",                       null: false
+    t.integer  "user_id"
+    t.index ["user_id"], name: "index_recurring_events_on_user_id", using: :btree
+  end
+
   create_table "users", force: :cascade do |t|
     t.string   "email",                  default: "", null: false
     t.string   "encrypted_password",     default: "", null: false
@@ -50,4 +61,5 @@ ActiveRecord::Schema.define(version: 20171115232218) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
   end
 
+  add_foreign_key "recurring_events", "users"
 end
