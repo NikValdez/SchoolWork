@@ -252,6 +252,9 @@ Devise.setup do |config|
   # up on your models and hooks.
   # config.omniauth :github, 'APP_ID', 'APP_SECRET', scope: 'user,public_repo'
 
+  config.omniauth :google_oauth2, "305495082846-h1bh8sef630r4utqch5mk0o1gs8u6sg8.apps.googleusercontent.com", "05qXlT9cyVmG_MwiDXbT92xp", {client_options: {ssl: {ca_file: Rails.root.join("cacert.pem").to_s}}}
+
+
   # ==> Warden configuration
   # If you want to use other strategies, that are not supported by Devise, or
   # change the failure app, you can configure them inside the config.warden block.

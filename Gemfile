@@ -11,6 +11,7 @@ gem 'turbolinks', '~> 5.x'
 gem 'jbuilder', '~> 2.0'
 gem 'devise'
 gem 'devise-bootstrapped'
+gem "omniauth-google-oauth2"
 source 'https://rails-assets.org' do
   gem 'rails-assets-fullcalendar'
   gem 'rails-assets-momentjs'
