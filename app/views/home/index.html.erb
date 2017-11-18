@@ -39,6 +39,16 @@
       <h1>Welcome Courses</h1>
       <h2>Never Miss an Assignment Again</h2>
       <a href="#about" class="btn-get-started">Get Started</a>
+    
+      <button class="loginBtn loginBtn--google">
+      <% if current_user %>
+        Signed in!
+        <%= link_to('Signout', destroy_user_session_path, method: :delete) %> 
+      <% else %>
+        <%= link_to "Sign in with Google", user_google_oauth2_omniauth_authorize_path %>
+
+      <% end %>
+    </button>
     </div>
   </section><!-- #hero -->
 
