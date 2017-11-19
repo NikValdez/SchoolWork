@@ -15287,3 +15287,2091 @@ Processing by Devise::SessionsController#new as HTML
 Completed 200 OK in 1019ms (Views: 1012.8ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for ::1 at 2017-11-18 15:58:13 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (7.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (26.5ms)
+  Rendered layouts/_messages.html.erb (1.6ms)
+Completed 200 OK in 2286ms (Views: 2223.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-11-18 16:00:17 -0800
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (9.2ms)
+  Rendered layouts/_messages.html.erb (5.1ms)
+Completed 200 OK in 9266ms (Views: 9259.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-11-18 16:00:54 -0800
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (16.8ms)
+  Rendered layouts/_messages.html.erb (1.3ms)
+Completed 200 OK in 8986ms (Views: 8981.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/visitors" for ::1 at 2017-11-18 16:01:31 -0800
+Processing by VisitorsController#index as HTML
+Completed 401 Unauthorized in 10ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2017-11-18 16:01:34 -0800
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (3.2ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (62.3ms)
+  Rendered layouts/_messages.html.erb (1.0ms)
+Completed 200 OK in 580ms (Views: 453.7ms | ActiveRecord: 11.2ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2017-11-18 16:01:59 -0800
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (8.3ms)
+  Rendered layouts/_messages.html.erb (0.9ms)
+Completed 200 OK in 294ms (Views: 291.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-11-18 16:08:07 -0800
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (2.6ms)
+  Rendered layouts/_messages.html.erb (0.9ms)
+Completed 200 OK in 243ms (Views: 238.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/auth/google_oauth2" for ::1 at 2017-11-18 16:09:12 -0800
+Started GET "/users/auth/google_oauth2" for ::1 at 2017-11-18 16:09:12 -0800
+Started GET "/" for ::1 at 2017-11-18 16:11:12 -0800
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (63.8ms)
+Completed 500 Internal Server Error in 101ms (ActiveRecord: 0.0ms)
+
+
+
+SyntaxError - syntax error, unexpected ',', expecting ')'
+...session_path, method: :delete), class: "google" );@output_bu...
+...                               ^:
+  app/views/home/index.html.erb:22:in `'
+  actionview (5.0.0.1) lib/action_view/template.rb:309:in `compile'
+  actionview (5.0.0.1) lib/action_view/template.rb:258:in `block (2 levels) in compile!'
+  activesupport (5.0.0.1) lib/active_support/notifications.rb:166:in `instrument'
+  actionview (5.0.0.1) lib/action_view/template.rb:350:in `instrument'
+  actionview (5.0.0.1) lib/action_view/template.rb:257:in `block in compile!'
+  actionview (5.0.0.1) lib/action_view/template.rb:245:in `compile!'
+  actionview (5.0.0.1) lib/action_view/template.rb:157:in `block in render'
+  activesupport (5.0.0.1) lib/active_support/notifications.rb:166:in `instrument'
+  actionview (5.0.0.1) lib/action_view/template.rb:348:in `instrument'
+  actionview (5.0.0.1) lib/action_view/template.rb:156:in `render'
+  actionview (5.0.0.1) lib/action_view/renderer/template_renderer.rb:54:in `block (2 levels) in render_template'
+  actionview (5.0.0.1) lib/action_view/renderer/abstract_renderer.rb:42:in `block in instrument'
+  activesupport (5.0.0.1) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (5.0.0.1) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+  activesupport (5.0.0.1) lib/active_support/notifications.rb:164:in `instrument'
+  actionview (5.0.0.1) lib/action_view/renderer/abstract_renderer.rb:41:in `instrument'
+  actionview (5.0.0.1) lib/action_view/renderer/template_renderer.rb:53:in `block in render_template'
+  actionview (5.0.0.1) lib/action_view/renderer/template_renderer.rb:61:in `render_with_layout'
+  actionview (5.0.0.1) lib/action_view/renderer/template_renderer.rb:52:in `render_template'
+  actionview (5.0.0.1) lib/action_view/renderer/template_renderer.rb:14:in `render'
+  actionview (5.0.0.1) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (5.0.0.1) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (5.0.0.1) lib/action_view/rendering.rb:103:in `_render_template'
+  actionpack (5.0.0.1) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (5.0.0.1) lib/action_view/rendering.rb:83:in `render_to_body'
+  actionpack (5.0.0.1) lib/action_controller/metal/rendering.rb:52:in `render_to_body'
+  actionpack (5.0.0.1) lib/action_controller/metal/renderers.rb:144:in `render_to_body'
+  actionpack (5.0.0.1) lib/abstract_controller/rendering.rb:26:in `render'
+  actionpack (5.0.0.1) lib/action_controller/metal/rendering.rb:36:in `render'
+  actionpack (5.0.0.1) lib/action_controller/metal/instrumentation.rb:44:in `block (2 levels) in render'
+  activesupport (5.0.0.1) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /Users/nikolascochran/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/benchmark.rb:308:in `realtime'
+  activesupport (5.0.0.1) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (5.0.0.1) lib/action_controller/metal/instrumentation.rb:44:in `block in render'
+  actionpack (5.0.0.1) lib/action_controller/metal/instrumentation.rb:87:in `cleanup_view_runtime'
+  activerecord (5.0.0.1) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (5.0.0.1) lib/action_controller/metal/instrumentation.rb:43:in `render'
+  actionpack (5.0.0.1) lib/action_controller/metal/implicit_render.rb:36:in `default_render'
+  actionpack (5.0.0.1) lib/action_controller/metal/basic_implicit_render.rb:4:in `block in send_action'
+  actionpack (5.0.0.1) lib/action_controller/metal/basic_implicit_render.rb:4:in `send_action'
+  actionpack (5.0.0.1) lib/abstract_controller/base.rb:188:in `process_action'
+  actionpack (5.0.0.1) lib/action_controller/metal/rendering.rb:30:in `process_action'
+  actionpack (5.0.0.1) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (5.0.0.1) lib/active_support/callbacks.rb:126:in `call'
+  activesupport (5.0.0.1) lib/active_support/callbacks.rb:506:in `block (2 levels) in compile'
+  activesupport (5.0.0.1) lib/active_support/callbacks.rb:455:in `call'
+  activesupport (5.0.0.1) lib/active_support/callbacks.rb:101:in `__run_callbacks__'
+  activesupport (5.0.0.1) lib/active_support/callbacks.rb:750:in `_run_process_action_callbacks'
+  activesupport (5.0.0.1) lib/active_support/callbacks.rb:90:in `run_callbacks'
+  actionpack (5.0.0.1) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (5.0.0.1) lib/action_controller/metal/rescue.rb:20:in `process_action'
+  actionpack (5.0.0.1) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (5.0.0.1) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (5.0.0.1) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+  activesupport (5.0.0.1) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (5.0.0.1) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (5.0.0.1) lib/action_controller/metal/params_wrapper.rb:248:in `process_action'
+  activerecord (5.0.0.1) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (5.0.0.1) lib/abstract_controller/base.rb:126:in `process'
+  actionview (5.0.0.1) lib/action_view/rendering.rb:30:in `process'
+  actionpack (5.0.0.1) lib/action_controller/metal.rb:190:in `dispatch'
+  actionpack (5.0.0.1) lib/action_controller/metal.rb:262:in `dispatch'
+  actionpack (5.0.0.1) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+  actionpack (5.0.0.1) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+  actionpack (5.0.0.1) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+  actionpack (5.0.0.1) lib/action_dispatch/journey/router.rb:26:in `serve'
+  actionpack (5.0.0.1) lib/action_dispatch/routing/route_set.rb:725:in `call'
+  omniauth (1.7.1) lib/omniauth/strategy.rb:190:in `call!'
+  omniauth (1.7.1) lib/omniauth/strategy.rb:168:in `call'
+  warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+  warden (1.2.7) lib/warden/manager.rb:35:in `call'
+  rack (2.0.1) lib/rack/etag.rb:25:in `call'
+  rack (2.0.1) lib/rack/conditional_get.rb:25:in `call'
+  rack (2.0.1) lib/rack/head.rb:12:in `call'
+  rack (2.0.1) lib/rack/session/abstract/id.rb:222:in `context'
+  rack (2.0.1) lib/rack/session/abstract/id.rb:216:in `call'
+  actionpack (5.0.0.1) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+  activerecord (5.0.0.1) lib/active_record/migration.rb:552:in `call'
+  actionpack (5.0.0.1) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+  activesupport (5.0.0.1) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+  activesupport (5.0.0.1) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+  activesupport (5.0.0.1) lib/active_support/callbacks.rb:90:in `run_callbacks'
+  actionpack (5.0.0.1) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+  actionpack (5.0.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+  actionpack (5.0.0.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (5.0.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+  web-console (3.3.1) lib/web_console/middleware.rb:131:in `call_app'
+  web-console (3.3.1) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (3.3.1) lib/web_console/middleware.rb:18:in `call'
+  actionpack (5.0.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+  railties (5.0.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+  railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+  activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+  activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `tagged'
+  railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `call'
+  sprockets-rails (3.1.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+  actionpack (5.0.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+  rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+  rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+  activesupport (5.0.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  actionpack (5.0.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+  actionpack (5.0.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+  rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+  railties (5.0.0.1) lib/rails/engine.rb:522:in `call'
+  puma (3.6.0) lib/puma/configuration.rb:225:in `call'
+  puma (3.6.0) lib/puma/server.rb:578:in `handle_request'
+  puma (3.6.0) lib/puma/server.rb:415:in `process_client'
+  puma (3.6.0) lib/puma/server.rb:275:in `block in run'
+  puma (3.6.0) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+
+Started POST "/__better_errors/5b02b80a4602ed4a/variables" for ::1 at 2017-11-18 16:11:24 -0800
+Started GET "/" for ::1 at 2017-11-18 16:11:44 -0800
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (3.0ms)
+Completed 500 Internal Server Error in 28ms (ActiveRecord: 0.0ms)
+
+
+
+SyntaxError - syntax error, unexpected ',', expecting ')'
+...session_path, method: :delete), class="google" );@output_buf...
+...                               ^:
+  app/views/home/index.html.erb:22:in `'
+  actionview (5.0.0.1) lib/action_view/template.rb:309:in `compile'
+  actionview (5.0.0.1) lib/action_view/template.rb:258:in `block (2 levels) in compile!'
+  activesupport (5.0.0.1) lib/active_support/notifications.rb:166:in `instrument'
+  actionview (5.0.0.1) lib/action_view/template.rb:350:in `instrument'
+  actionview (5.0.0.1) lib/action_view/template.rb:257:in `block in compile!'
+  actionview (5.0.0.1) lib/action_view/template.rb:245:in `compile!'
+  actionview (5.0.0.1) lib/action_view/template.rb:157:in `block in render'
+  activesupport (5.0.0.1) lib/active_support/notifications.rb:166:in `instrument'
+  actionview (5.0.0.1) lib/action_view/template.rb:348:in `instrument'
+  actionview (5.0.0.1) lib/action_view/template.rb:156:in `render'
+  actionview (5.0.0.1) lib/action_view/renderer/template_renderer.rb:54:in `block (2 levels) in render_template'
+  actionview (5.0.0.1) lib/action_view/renderer/abstract_renderer.rb:42:in `block in instrument'
+  activesupport (5.0.0.1) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (5.0.0.1) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+  activesupport (5.0.0.1) lib/active_support/notifications.rb:164:in `instrument'
+  actionview (5.0.0.1) lib/action_view/renderer/abstract_renderer.rb:41:in `instrument'
+  actionview (5.0.0.1) lib/action_view/renderer/template_renderer.rb:53:in `block in render_template'
+  actionview (5.0.0.1) lib/action_view/renderer/template_renderer.rb:61:in `render_with_layout'
+  actionview (5.0.0.1) lib/action_view/renderer/template_renderer.rb:52:in `render_template'
+  actionview (5.0.0.1) lib/action_view/renderer/template_renderer.rb:14:in `render'
+  actionview (5.0.0.1) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (5.0.0.1) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (5.0.0.1) lib/action_view/rendering.rb:103:in `_render_template'
+  actionpack (5.0.0.1) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (5.0.0.1) lib/action_view/rendering.rb:83:in `render_to_body'
+  actionpack (5.0.0.1) lib/action_controller/metal/rendering.rb:52:in `render_to_body'
+  actionpack (5.0.0.1) lib/action_controller/metal/renderers.rb:144:in `render_to_body'
+  actionpack (5.0.0.1) lib/abstract_controller/rendering.rb:26:in `render'
+  actionpack (5.0.0.1) lib/action_controller/metal/rendering.rb:36:in `render'
+  actionpack (5.0.0.1) lib/action_controller/metal/instrumentation.rb:44:in `block (2 levels) in render'
+  activesupport (5.0.0.1) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /Users/nikolascochran/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/benchmark.rb:308:in `realtime'
+  activesupport (5.0.0.1) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (5.0.0.1) lib/action_controller/metal/instrumentation.rb:44:in `block in render'
+  actionpack (5.0.0.1) lib/action_controller/metal/instrumentation.rb:87:in `cleanup_view_runtime'
+  activerecord (5.0.0.1) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (5.0.0.1) lib/action_controller/metal/instrumentation.rb:43:in `render'
+  actionpack (5.0.0.1) lib/action_controller/metal/implicit_render.rb:36:in `default_render'
+  actionpack (5.0.0.1) lib/action_controller/metal/basic_implicit_render.rb:4:in `block in send_action'
+  actionpack (5.0.0.1) lib/action_controller/metal/basic_implicit_render.rb:4:in `send_action'
+  actionpack (5.0.0.1) lib/abstract_controller/base.rb:188:in `process_action'
+  actionpack (5.0.0.1) lib/action_controller/metal/rendering.rb:30:in `process_action'
+  actionpack (5.0.0.1) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (5.0.0.1) lib/active_support/callbacks.rb:126:in `call'
+  activesupport (5.0.0.1) lib/active_support/callbacks.rb:506:in `block (2 levels) in compile'
+  activesupport (5.0.0.1) lib/active_support/callbacks.rb:455:in `call'
+  activesupport (5.0.0.1) lib/active_support/callbacks.rb:101:in `__run_callbacks__'
+  activesupport (5.0.0.1) lib/active_support/callbacks.rb:750:in `_run_process_action_callbacks'
+  activesupport (5.0.0.1) lib/active_support/callbacks.rb:90:in `run_callbacks'
+  actionpack (5.0.0.1) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (5.0.0.1) lib/action_controller/metal/rescue.rb:20:in `process_action'
+  actionpack (5.0.0.1) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (5.0.0.1) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (5.0.0.1) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+  activesupport (5.0.0.1) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (5.0.0.1) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (5.0.0.1) lib/action_controller/metal/params_wrapper.rb:248:in `process_action'
+  activerecord (5.0.0.1) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (5.0.0.1) lib/abstract_controller/base.rb:126:in `process'
+  actionview (5.0.0.1) lib/action_view/rendering.rb:30:in `process'
+  actionpack (5.0.0.1) lib/action_controller/metal.rb:190:in `dispatch'
+  actionpack (5.0.0.1) lib/action_controller/metal.rb:262:in `dispatch'
+  actionpack (5.0.0.1) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+  actionpack (5.0.0.1) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+  actionpack (5.0.0.1) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+  actionpack (5.0.0.1) lib/action_dispatch/journey/router.rb:26:in `serve'
+  actionpack (5.0.0.1) lib/action_dispatch/routing/route_set.rb:725:in `call'
+  omniauth (1.7.1) lib/omniauth/strategy.rb:190:in `call!'
+  omniauth (1.7.1) lib/omniauth/strategy.rb:168:in `call'
+  warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+  warden (1.2.7) lib/warden/manager.rb:35:in `call'
+  rack (2.0.1) lib/rack/etag.rb:25:in `call'
+  rack (2.0.1) lib/rack/conditional_get.rb:25:in `call'
+  rack (2.0.1) lib/rack/head.rb:12:in `call'
+  rack (2.0.1) lib/rack/session/abstract/id.rb:222:in `context'
+  rack (2.0.1) lib/rack/session/abstract/id.rb:216:in `call'
+  actionpack (5.0.0.1) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+  activerecord (5.0.0.1) lib/active_record/migration.rb:552:in `call'
+  actionpack (5.0.0.1) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+  activesupport (5.0.0.1) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+  activesupport (5.0.0.1) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+  activesupport (5.0.0.1) lib/active_support/callbacks.rb:90:in `run_callbacks'
+  actionpack (5.0.0.1) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+  actionpack (5.0.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+  actionpack (5.0.0.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (5.0.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+  web-console (3.3.1) lib/web_console/middleware.rb:131:in `call_app'
+  web-console (3.3.1) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (3.3.1) lib/web_console/middleware.rb:18:in `call'
+  actionpack (5.0.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+  railties (5.0.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+  railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+  activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+  activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `tagged'
+  railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `call'
+  sprockets-rails (3.1.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+  actionpack (5.0.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+  rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+  rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+  activesupport (5.0.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  actionpack (5.0.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+  actionpack (5.0.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+  rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+  railties (5.0.0.1) lib/rails/engine.rb:522:in `call'
+  puma (3.6.0) lib/puma/configuration.rb:225:in `call'
+  puma (3.6.0) lib/puma/server.rb:578:in `handle_request'
+  puma (3.6.0) lib/puma/server.rb:415:in `process_client'
+  puma (3.6.0) lib/puma/server.rb:275:in `block in run'
+  puma (3.6.0) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+
+Started POST "/__better_errors/86bd32cc5b926ff6/variables" for ::1 at 2017-11-18 16:11:46 -0800
+Started GET "/" for ::1 at 2017-11-18 16:13:37 -0800
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (4.0ms)
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 0.0ms)
+
+
+
+SyntaxError - syntax error, unexpected ',', expecting ')'
+...session_path, method: :delete), class: "google" );@output_bu...
+...                               ^:
+  app/views/home/index.html.erb:22:in `'
+  actionview (5.0.0.1) lib/action_view/template.rb:309:in `compile'
+  actionview (5.0.0.1) lib/action_view/template.rb:258:in `block (2 levels) in compile!'
+  activesupport (5.0.0.1) lib/active_support/notifications.rb:166:in `instrument'
+  actionview (5.0.0.1) lib/action_view/template.rb:350:in `instrument'
+  actionview (5.0.0.1) lib/action_view/template.rb:257:in `block in compile!'
+  actionview (5.0.0.1) lib/action_view/template.rb:245:in `compile!'
+  actionview (5.0.0.1) lib/action_view/template.rb:157:in `block in render'
+  activesupport (5.0.0.1) lib/active_support/notifications.rb:166:in `instrument'
+  actionview (5.0.0.1) lib/action_view/template.rb:348:in `instrument'
+  actionview (5.0.0.1) lib/action_view/template.rb:156:in `render'
+  actionview (5.0.0.1) lib/action_view/renderer/template_renderer.rb:54:in `block (2 levels) in render_template'
+  actionview (5.0.0.1) lib/action_view/renderer/abstract_renderer.rb:42:in `block in instrument'
+  activesupport (5.0.0.1) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (5.0.0.1) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+  activesupport (5.0.0.1) lib/active_support/notifications.rb:164:in `instrument'
+  actionview (5.0.0.1) lib/action_view/renderer/abstract_renderer.rb:41:in `instrument'
+  actionview (5.0.0.1) lib/action_view/renderer/template_renderer.rb:53:in `block in render_template'
+  actionview (5.0.0.1) lib/action_view/renderer/template_renderer.rb:61:in `render_with_layout'
+  actionview (5.0.0.1) lib/action_view/renderer/template_renderer.rb:52:in `render_template'
+  actionview (5.0.0.1) lib/action_view/renderer/template_renderer.rb:14:in `render'
+  actionview (5.0.0.1) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (5.0.0.1) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (5.0.0.1) lib/action_view/rendering.rb:103:in `_render_template'
+  actionpack (5.0.0.1) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (5.0.0.1) lib/action_view/rendering.rb:83:in `render_to_body'
+  actionpack (5.0.0.1) lib/action_controller/metal/rendering.rb:52:in `render_to_body'
+  actionpack (5.0.0.1) lib/action_controller/metal/renderers.rb:144:in `render_to_body'
+  actionpack (5.0.0.1) lib/abstract_controller/rendering.rb:26:in `render'
+  actionpack (5.0.0.1) lib/action_controller/metal/rendering.rb:36:in `render'
+  actionpack (5.0.0.1) lib/action_controller/metal/instrumentation.rb:44:in `block (2 levels) in render'
+  activesupport (5.0.0.1) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /Users/nikolascochran/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/benchmark.rb:308:in `realtime'
+  activesupport (5.0.0.1) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (5.0.0.1) lib/action_controller/metal/instrumentation.rb:44:in `block in render'
+  actionpack (5.0.0.1) lib/action_controller/metal/instrumentation.rb:87:in `cleanup_view_runtime'
+  activerecord (5.0.0.1) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (5.0.0.1) lib/action_controller/metal/instrumentation.rb:43:in `render'
+  actionpack (5.0.0.1) lib/action_controller/metal/implicit_render.rb:36:in `default_render'
+  actionpack (5.0.0.1) lib/action_controller/metal/basic_implicit_render.rb:4:in `block in send_action'
+  actionpack (5.0.0.1) lib/action_controller/metal/basic_implicit_render.rb:4:in `send_action'
+  actionpack (5.0.0.1) lib/abstract_controller/base.rb:188:in `process_action'
+  actionpack (5.0.0.1) lib/action_controller/metal/rendering.rb:30:in `process_action'
+  actionpack (5.0.0.1) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (5.0.0.1) lib/active_support/callbacks.rb:126:in `call'
+  activesupport (5.0.0.1) lib/active_support/callbacks.rb:506:in `block (2 levels) in compile'
+  activesupport (5.0.0.1) lib/active_support/callbacks.rb:455:in `call'
+  activesupport (5.0.0.1) lib/active_support/callbacks.rb:101:in `__run_callbacks__'
+  activesupport (5.0.0.1) lib/active_support/callbacks.rb:750:in `_run_process_action_callbacks'
+  activesupport (5.0.0.1) lib/active_support/callbacks.rb:90:in `run_callbacks'
+  actionpack (5.0.0.1) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (5.0.0.1) lib/action_controller/metal/rescue.rb:20:in `process_action'
+  actionpack (5.0.0.1) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (5.0.0.1) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (5.0.0.1) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+  activesupport (5.0.0.1) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (5.0.0.1) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (5.0.0.1) lib/action_controller/metal/params_wrapper.rb:248:in `process_action'
+  activerecord (5.0.0.1) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (5.0.0.1) lib/abstract_controller/base.rb:126:in `process'
+  actionview (5.0.0.1) lib/action_view/rendering.rb:30:in `process'
+  actionpack (5.0.0.1) lib/action_controller/metal.rb:190:in `dispatch'
+  actionpack (5.0.0.1) lib/action_controller/metal.rb:262:in `dispatch'
+  actionpack (5.0.0.1) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+  actionpack (5.0.0.1) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+  actionpack (5.0.0.1) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+  actionpack (5.0.0.1) lib/action_dispatch/journey/router.rb:26:in `serve'
+  actionpack (5.0.0.1) lib/action_dispatch/routing/route_set.rb:725:in `call'
+  omniauth (1.7.1) lib/omniauth/strategy.rb:190:in `call!'
+  omniauth (1.7.1) lib/omniauth/strategy.rb:168:in `call'
+  warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+  warden (1.2.7) lib/warden/manager.rb:35:in `call'
+  rack (2.0.1) lib/rack/etag.rb:25:in `call'
+  rack (2.0.1) lib/rack/conditional_get.rb:25:in `call'
+  rack (2.0.1) lib/rack/head.rb:12:in `call'
+  rack (2.0.1) lib/rack/session/abstract/id.rb:222:in `context'
+  rack (2.0.1) lib/rack/session/abstract/id.rb:216:in `call'
+  actionpack (5.0.0.1) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+  activerecord (5.0.0.1) lib/active_record/migration.rb:552:in `call'
+  actionpack (5.0.0.1) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+  activesupport (5.0.0.1) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+  activesupport (5.0.0.1) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+  activesupport (5.0.0.1) lib/active_support/callbacks.rb:90:in `run_callbacks'
+  actionpack (5.0.0.1) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+  actionpack (5.0.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+  actionpack (5.0.0.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (5.0.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+  web-console (3.3.1) lib/web_console/middleware.rb:131:in `call_app'
+  web-console (3.3.1) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (3.3.1) lib/web_console/middleware.rb:18:in `call'
+  actionpack (5.0.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+  railties (5.0.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+  railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+  activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+  activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `tagged'
+  railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `call'
+  sprockets-rails (3.1.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+  actionpack (5.0.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+  rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+  rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+  activesupport (5.0.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  actionpack (5.0.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+  actionpack (5.0.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+  rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+  railties (5.0.0.1) lib/rails/engine.rb:522:in `call'
+  puma (3.6.0) lib/puma/configuration.rb:225:in `call'
+  puma (3.6.0) lib/puma/server.rb:578:in `handle_request'
+  puma (3.6.0) lib/puma/server.rb:415:in `process_client'
+  puma (3.6.0) lib/puma/server.rb:275:in `block in run'
+  puma (3.6.0) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+
+Started POST "/__better_errors/4ab9161995675898/variables" for ::1 at 2017-11-18 16:13:39 -0800
+Started GET "/" for ::1 at 2017-11-18 16:14:08 -0800
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (4.0ms)
+  Rendered layouts/_messages.html.erb (16.1ms)
+Completed 200 OK in 629ms (Views: 625.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-11-18 16:14:55 -0800
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (16.8ms)
+  Rendered layouts/_messages.html.erb (0.9ms)
+Completed 200 OK in 7966ms (Views: 7953.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-11-18 16:15:55 -0800
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (2.3ms)
+  Rendered layouts/_messages.html.erb (1.7ms)
+Completed 200 OK in 469ms (Views: 465.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/visitors" for ::1 at 2017-11-18 16:16:27 -0800
+Processing by VisitorsController#index as HTML
+Completed 401 Unauthorized in 49ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2017-11-18 16:16:27 -0800
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (3.1ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (16.8ms)
+  Rendered layouts/_messages.html.erb (1.2ms)
+Completed 200 OK in 522ms (Views: 518.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-11-18 16:16:57 -0800
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (9.9ms)
+  Rendered layouts/_messages.html.erb (1.8ms)
+Completed 200 OK in 475ms (Views: 470.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-11-18 16:18:28 -0800
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (43.7ms)
+Completed 500 Internal Server Error in 70ms (ActiveRecord: 0.0ms)
+
+
+
+SyntaxError - syntax error, unexpected ')', expecting keyword_end
+...horize_path, class: "google") );@output_buffer.safe_append='
+...                               ^:
+  app/views/home/index.html.erb:47:in `'
+  actionview (5.0.0.1) lib/action_view/template.rb:309:in `compile'
+  actionview (5.0.0.1) lib/action_view/template.rb:258:in `block (2 levels) in compile!'
+  activesupport (5.0.0.1) lib/active_support/notifications.rb:166:in `instrument'
+  actionview (5.0.0.1) lib/action_view/template.rb:350:in `instrument'
+  actionview (5.0.0.1) lib/action_view/template.rb:257:in `block in compile!'
+  actionview (5.0.0.1) lib/action_view/template.rb:245:in `compile!'
+  actionview (5.0.0.1) lib/action_view/template.rb:157:in `block in render'
+  activesupport (5.0.0.1) lib/active_support/notifications.rb:166:in `instrument'
+  actionview (5.0.0.1) lib/action_view/template.rb:348:in `instrument'
+  actionview (5.0.0.1) lib/action_view/template.rb:156:in `render'
+  actionview (5.0.0.1) lib/action_view/renderer/template_renderer.rb:54:in `block (2 levels) in render_template'
+  actionview (5.0.0.1) lib/action_view/renderer/abstract_renderer.rb:42:in `block in instrument'
+  activesupport (5.0.0.1) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (5.0.0.1) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+  activesupport (5.0.0.1) lib/active_support/notifications.rb:164:in `instrument'
+  actionview (5.0.0.1) lib/action_view/renderer/abstract_renderer.rb:41:in `instrument'
+  actionview (5.0.0.1) lib/action_view/renderer/template_renderer.rb:53:in `block in render_template'
+  actionview (5.0.0.1) lib/action_view/renderer/template_renderer.rb:61:in `render_with_layout'
+  actionview (5.0.0.1) lib/action_view/renderer/template_renderer.rb:52:in `render_template'
+  actionview (5.0.0.1) lib/action_view/renderer/template_renderer.rb:14:in `render'
+  actionview (5.0.0.1) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (5.0.0.1) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (5.0.0.1) lib/action_view/rendering.rb:103:in `_render_template'
+  actionpack (5.0.0.1) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (5.0.0.1) lib/action_view/rendering.rb:83:in `render_to_body'
+  actionpack (5.0.0.1) lib/action_controller/metal/rendering.rb:52:in `render_to_body'
+  actionpack (5.0.0.1) lib/action_controller/metal/renderers.rb:144:in `render_to_body'
+  actionpack (5.0.0.1) lib/abstract_controller/rendering.rb:26:in `render'
+  actionpack (5.0.0.1) lib/action_controller/metal/rendering.rb:36:in `render'
+  actionpack (5.0.0.1) lib/action_controller/metal/instrumentation.rb:44:in `block (2 levels) in render'
+  activesupport (5.0.0.1) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /Users/nikolascochran/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/benchmark.rb:308:in `realtime'
+  activesupport (5.0.0.1) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (5.0.0.1) lib/action_controller/metal/instrumentation.rb:44:in `block in render'
+  actionpack (5.0.0.1) lib/action_controller/metal/instrumentation.rb:87:in `cleanup_view_runtime'
+  activerecord (5.0.0.1) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (5.0.0.1) lib/action_controller/metal/instrumentation.rb:43:in `render'
+  actionpack (5.0.0.1) lib/action_controller/metal/implicit_render.rb:36:in `default_render'
+  actionpack (5.0.0.1) lib/action_controller/metal/basic_implicit_render.rb:4:in `block in send_action'
+  actionpack (5.0.0.1) lib/action_controller/metal/basic_implicit_render.rb:4:in `send_action'
+  actionpack (5.0.0.1) lib/abstract_controller/base.rb:188:in `process_action'
+  actionpack (5.0.0.1) lib/action_controller/metal/rendering.rb:30:in `process_action'
+  actionpack (5.0.0.1) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (5.0.0.1) lib/active_support/callbacks.rb:126:in `call'
+  activesupport (5.0.0.1) lib/active_support/callbacks.rb:506:in `block (2 levels) in compile'
+  activesupport (5.0.0.1) lib/active_support/callbacks.rb:455:in `call'
+  activesupport (5.0.0.1) lib/active_support/callbacks.rb:101:in `__run_callbacks__'
+  activesupport (5.0.0.1) lib/active_support/callbacks.rb:750:in `_run_process_action_callbacks'
+  activesupport (5.0.0.1) lib/active_support/callbacks.rb:90:in `run_callbacks'
+  actionpack (5.0.0.1) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (5.0.0.1) lib/action_controller/metal/rescue.rb:20:in `process_action'
+  actionpack (5.0.0.1) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (5.0.0.1) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (5.0.0.1) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+  activesupport (5.0.0.1) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (5.0.0.1) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (5.0.0.1) lib/action_controller/metal/params_wrapper.rb:248:in `process_action'
+  activerecord (5.0.0.1) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (5.0.0.1) lib/abstract_controller/base.rb:126:in `process'
+  actionview (5.0.0.1) lib/action_view/rendering.rb:30:in `process'
+  actionpack (5.0.0.1) lib/action_controller/metal.rb:190:in `dispatch'
+  actionpack (5.0.0.1) lib/action_controller/metal.rb:262:in `dispatch'
+  actionpack (5.0.0.1) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+  actionpack (5.0.0.1) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+  actionpack (5.0.0.1) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+  actionpack (5.0.0.1) lib/action_dispatch/journey/router.rb:26:in `serve'
+  actionpack (5.0.0.1) lib/action_dispatch/routing/route_set.rb:725:in `call'
+  omniauth (1.7.1) lib/omniauth/strategy.rb:190:in `call!'
+  omniauth (1.7.1) lib/omniauth/strategy.rb:168:in `call'
+  warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+  warden (1.2.7) lib/warden/manager.rb:35:in `call'
+  rack (2.0.1) lib/rack/etag.rb:25:in `call'
+  rack (2.0.1) lib/rack/conditional_get.rb:25:in `call'
+  rack (2.0.1) lib/rack/head.rb:12:in `call'
+  rack (2.0.1) lib/rack/session/abstract/id.rb:222:in `context'
+  rack (2.0.1) lib/rack/session/abstract/id.rb:216:in `call'
+  actionpack (5.0.0.1) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+  activerecord (5.0.0.1) lib/active_record/migration.rb:552:in `call'
+  actionpack (5.0.0.1) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+  activesupport (5.0.0.1) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+  activesupport (5.0.0.1) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+  activesupport (5.0.0.1) lib/active_support/callbacks.rb:90:in `run_callbacks'
+  actionpack (5.0.0.1) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+  actionpack (5.0.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+  actionpack (5.0.0.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (5.0.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+  web-console (3.3.1) lib/web_console/middleware.rb:131:in `call_app'
+  web-console (3.3.1) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (3.3.1) lib/web_console/middleware.rb:18:in `call'
+  actionpack (5.0.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+  railties (5.0.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+  railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+  activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+  activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `tagged'
+  railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `call'
+  sprockets-rails (3.1.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+  actionpack (5.0.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+  rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+  rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+  activesupport (5.0.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  actionpack (5.0.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+  actionpack (5.0.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+  rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+  railties (5.0.0.1) lib/rails/engine.rb:522:in `call'
+  puma (3.6.0) lib/puma/configuration.rb:225:in `call'
+  puma (3.6.0) lib/puma/server.rb:578:in `handle_request'
+  puma (3.6.0) lib/puma/server.rb:415:in `process_client'
+  puma (3.6.0) lib/puma/server.rb:275:in `block in run'
+  puma (3.6.0) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+
+Started POST "/__better_errors/e4880f9f379b09e4/variables" for ::1 at 2017-11-18 16:18:34 -0800
+Started GET "/" for ::1 at 2017-11-18 16:19:44 -0800
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (12.2ms)
+  Rendered layouts/_messages.html.erb (1.7ms)
+Completed 200 OK in 556ms (Views: 551.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/auth/google_oauth2" for ::1 at 2017-11-18 16:20:11 -0800
+Started GET "/users/auth/google_oauth2" for ::1 at 2017-11-18 16:20:12 -0800
+Started GET "/users/sign_in" for ::1 at 2017-11-18 16:20:24 -0800
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (3.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (24.7ms)
+  Rendered layouts/_messages.html.erb (1.1ms)
+Completed 200 OK in 424ms (Views: 422.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-11-18 16:21:58 -0800
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (3.1ms)
+  Rendered layouts/_messages.html.erb (1.8ms)
+Completed 200 OK in 8431ms (Views: 8427.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/auth/google_oauth2" for ::1 at 2017-11-18 16:22:13 -0800
+Started GET "/users/auth/google_oauth2" for ::1 at 2017-11-18 16:22:14 -0800
+Started GET "/users/auth/google_oauth2/callback?state=b88a44578042abdd924249dfbcbcba81634414ec0e76d86b&code=4/akHfUK-hdXoYZtwCgruNb9nhaElEleKOmgrQaOZNndE" for ::1 at 2017-11-18 16:22:21 -0800
+Processing by Users::OmniauthCallbacksController#google_oauth2 as HTML
+  Parameters: {"state"=>"b88a44578042abdd924249dfbcbcba81634414ec0e76d86b", "code"=>"4/akHfUK-hdXoYZtwCgruNb9nhaElEleKOmgrQaOZNndE"}
+  [1m[36mUser Load (13.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "nikcochran@gmail.com"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.1ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = $1, "last_sign_in_at" = $2, "sign_in_count" = $3, "updated_at" = $4 WHERE "users"."id" = $5[0m  [["current_sign_in_at", 2017-11-19 00:22:23 UTC], ["last_sign_in_at", 2017-11-18 01:32:23 UTC], ["sign_in_count", 6], ["updated_at", 2017-11-19 00:22:23 UTC], ["id", 1]]
+  [1m[35m (223.2ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/visitors
+Completed 302 Found in 286ms (ActiveRecord: 238.2ms)
+
+
+Started GET "/visitors" for ::1 at 2017-11-18 16:22:24 -0800
+Processing by VisitorsController#index as HTML
+  [1m[36mUser Load (5.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering visitors/index.html.erb within layouts/application
+  Rendered visitors/index.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_messages.html.erb (2.0ms)
+Completed 200 OK in 868ms (Views: 845.6ms | ActiveRecord: 5.4ms)
+
+
+Started GET "/events.json?start=2017-10-29&end=2017-12-10&_=1511050945873" for ::1 at 2017-11-18 16:22:26 -0800
+Processing by EventsController#index as JSON
+  Parameters: {"start"=>"2017-10-29", "end"=>"2017-12-10", "_"=>"1511050945873"}
+  [1m[36mUser Load (6.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Started GET "/recurring_events.json?start=2017-10-29&end=2017-12-10&_=1511050945874" for ::1 at 2017-11-18 16:22:26 -0800
+  Rendering events/index.json.jbuilder
+  [1m[36mEvent Load (5.8ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered events/index.json.jbuilder (234.7ms)
+Completed 200 OK in 414ms (Views: 270.9ms | ActiveRecord: 40.4ms)
+
+
+Processing by RecurringEventsController#index as JSON
+  Parameters: {"start"=>"2017-10-29", "end"=>"2017-12-10", "_"=>"1511050945874"}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering recurring_events/index.json.jbuilder
+  [1m[36mRecurringEvent Load (0.9ms)[0m  [1m[34mSELECT "recurring_events".* FROM "recurring_events" WHERE "recurring_events"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered collection of recurring_events/_recurring_event.json.jbuilder [1 times] (89.3ms)
+  Rendered recurring_events/index.json.jbuilder (150.9ms)
+Completed 200 OK in 246ms (Views: 200.7ms | ActiveRecord: 7.3ms)
+
+
+Started GET "/events.json?start=2017-10-01&end=2017-11-12&_=1511050945875" for ::1 at 2017-11-18 16:23:12 -0800
+Processing by EventsController#index as JSON
+  Parameters: {"start"=>"2017-10-01", "end"=>"2017-11-12", "_"=>"1511050945875"}
+Started GET "/recurring_events.json?start=2017-10-01&end=2017-11-12&_=1511050945876" for ::1 at 2017-11-18 16:23:12 -0800
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Processing by RecurringEventsController#index as JSON
+  Parameters: {"start"=>"2017-10-01", "end"=>"2017-11-12", "_"=>"1511050945876"}
+  Rendering events/index.json.jbuilder
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mEvent Load (36.7ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."user_id" = $1[0m  [["user_id", 1]]
+  Rendering recurring_events/index.json.jbuilder
+  Rendered events/index.json.jbuilder (50.0ms)
+Completed 200 OK in 112ms (Views: 60.3ms | ActiveRecord: 38.2ms)
+
+
+  [1m[36mRecurringEvent Load (0.5ms)[0m  [1m[34mSELECT "recurring_events".* FROM "recurring_events" WHERE "recurring_events"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered collection of recurring_events/_recurring_event.json.jbuilder [1 times] (2.1ms)
+  Rendered recurring_events/index.json.jbuilder (13.0ms)
+Completed 200 OK in 67ms (Views: 54.7ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/events.json?start=2017-10-29&end=2017-12-10&_=1511050945877" for ::1 at 2017-11-18 16:23:14 -0800
+Started GET "/recurring_events.json?start=2017-10-29&end=2017-12-10&_=1511050945878" for ::1 at 2017-11-18 16:23:14 -0800
+Processing by EventsController#index as JSON
+Processing by RecurringEventsController#index as JSON
+  Parameters: {"start"=>"2017-10-29", "end"=>"2017-12-10", "_"=>"1511050945878"}
+  Parameters: {"start"=>"2017-10-29", "end"=>"2017-12-10", "_"=>"1511050945877"}
+  [1m[36mUser Load (2.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering recurring_events/index.json.jbuilder
+  [1m[36mUser Load (40.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering events/index.json.jbuilder
+  [1m[36mRecurringEvent Load (36.0ms)[0m  [1m[34mSELECT "recurring_events".* FROM "recurring_events" WHERE "recurring_events"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered collection of recurring_events/_recurring_event.json.jbuilder [1 times] (6.9ms)
+  Rendered recurring_events/index.json.jbuilder (79.4ms)
+Completed 200 OK in 129ms (Views: 78.4ms | ActiveRecord: 38.6ms)
+
+
+  [1m[36mEvent Load (1.0ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered events/index.json.jbuilder (27.9ms)
+Completed 200 OK in 138ms (Views: 79.1ms | ActiveRecord: 41.7ms)
+
+
+Started PATCH "/events/17?method=patch" for ::1 at 2017-11-18 16:24:53 -0800
+Processing by EventsController#update as */*
+  Parameters: {"event"=>{"id"=>"17", "start"=>"2017-10-31", "end"=>"2017-11-01"}, "method"=>"patch", "id"=>"17"}
+  [1m[36mEvent Load (0.9ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 17], ["LIMIT", 1]]
+Unpermitted parameter: id
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (5.3ms)[0m  [1m[33mUPDATE "events" SET "start" = $1, "end" = $2, "updated_at" = $3 WHERE "events"."id" = $4[0m  [["start", 2017-10-31 00:00:00 UTC], ["end", 2017-11-01 00:00:00 UTC], ["updated_at", 2017-11-19 00:24:53 UTC], ["id", 17]]
+  [1m[35m (45.0ms)[0m  [1m[35mCOMMIT[0m
+  Rendering events/update.js.erb
+  Rendered events/_event.json.jbuilder (2.8ms)
+  Rendered events/update.js.erb (61.1ms)
+Completed 200 OK in 283ms (Views: 168.2ms | ActiveRecord: 51.8ms)
+
+
+Started PATCH "/recurring_events/1?method=patch" for ::1 at 2017-11-18 16:24:56 -0800
+Processing by RecurringEventsController#update as */*
+  Parameters: {"event"=>{"id"=>"recurring_1", "start"=>"2017-11-23", "end"=>"2017-11-24"}, "method"=>"patch", "id"=>"1"}
+  [1m[36mRecurringEvent Load (1.5ms)[0m  [1m[34mSELECT  "recurring_events".* FROM "recurring_events" WHERE "recurring_events"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (3.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (1.0ms)[0m  [1m[33mUPDATE "recurring_events" SET "anchor" = $1, "updated_at" = $2 WHERE "recurring_events"."id" = $3[0m  [["anchor", Thu, 23 Nov 2017], ["updated_at", 2017-11-19 00:24:56 UTC], ["id", 1]]
+  [1m[35m (6.3ms)[0m  [1m[35mCOMMIT[0m
+  Rendering recurring_events/update.js.erb
+  Rendered recurring_events/_recurring_event.json.jbuilder (137.8ms)
+  Rendered recurring_events/update.js.erb (191.2ms)
+Completed 200 OK in 378ms (Views: 265.2ms | ActiveRecord: 12.4ms)
+
+
+Started GET "/events/18/edit?_=1511050945879" for ::1 at 2017-11-18 16:24:57 -0800
+Processing by EventsController#edit as JS
+  Parameters: {"_"=>"1511050945879", "id"=>"18"}
+  [1m[36mEvent Load (0.5ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  Rendering events/edit.js.erb
+  Rendered events/_form.html.erb (177.2ms)
+  Rendered events/_edit.html.erb (309.2ms)
+  Rendered events/edit.js.erb (381.1ms)
+Completed 200 OK in 568ms (Views: 470.9ms | ActiveRecord: 0.5ms)
+
+
+Started PATCH "/events/20?method=patch" for ::1 at 2017-11-18 16:25:04 -0800
+Processing by EventsController#update as */*
+  Parameters: {"event"=>{"id"=>"20", "start"=>"2017-11-06", "end"=>"2017-11-07"}, "method"=>"patch", "id"=>"20"}
+  [1m[36mEvent Load (0.3ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+Unpermitted parameter: id
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (0.6ms)[0m  [1m[33mUPDATE "events" SET "start" = $1, "end" = $2, "updated_at" = $3 WHERE "events"."id" = $4[0m  [["start", 2017-11-06 00:00:00 UTC], ["end", 2017-11-07 00:00:00 UTC], ["updated_at", 2017-11-19 00:25:04 UTC], ["id", 20]]
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+  Rendering events/update.js.erb
+  Rendered events/_event.json.jbuilder (2.8ms)
+  Rendered events/update.js.erb (106.1ms)
+Completed 200 OK in 259ms (Views: 186.3ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/" for ::1 at 2017-11-18 16:28:12 -0800
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered shared/_footer.html.erb (1.5ms)
+  Rendered home/index.html.erb within layouts/application (14.3ms)
+  Rendered layouts/_messages.html.erb (1.1ms)
+Completed 200 OK in 256ms (Views: 250.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/visitors" for ::1 at 2017-11-18 16:28:45 -0800
+Processing by VisitorsController#index as HTML
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering visitors/index.html.erb within layouts/application
+  Rendered shared/_footer.html.erb (55.9ms)
+  Rendered visitors/index.html.erb within layouts/application (60.5ms)
+  Rendered layouts/_messages.html.erb (1.0ms)
+Completed 200 OK in 696ms (Views: 686.8ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/events.json?start=2017-10-29&end=2017-12-10&_=1511051295519" for ::1 at 2017-11-18 16:28:46 -0800
+Processing by EventsController#index as JSON
+  Parameters: {"start"=>"2017-10-29", "end"=>"2017-12-10", "_"=>"1511051295519"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering events/index.json.jbuilder
+  [1m[36mEvent Load (0.5ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered events/index.json.jbuilder (10.5ms)
+Completed 200 OK in 53ms (Views: 43.9ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/recurring_events.json?start=2017-10-29&end=2017-12-10&_=1511051295520" for ::1 at 2017-11-18 16:28:46 -0800
+Processing by RecurringEventsController#index as JSON
+  Parameters: {"start"=>"2017-10-29", "end"=>"2017-12-10", "_"=>"1511051295520"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering recurring_events/index.json.jbuilder
+  [1m[36mRecurringEvent Load (0.9ms)[0m  [1m[34mSELECT "recurring_events".* FROM "recurring_events" WHERE "recurring_events"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered collection of recurring_events/_recurring_event.json.jbuilder [1 times] (4.3ms)
+  Rendered recurring_events/index.json.jbuilder (10.1ms)
+Completed 200 OK in 53ms (Views: 44.1ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/visitors" for ::1 at 2017-11-18 16:30:00 -0800
+Processing by VisitorsController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering visitors/index.html.erb within layouts/application
+  Rendered shared/_footer.html.erb (1.9ms)
+  Rendered visitors/index.html.erb within layouts/application (9.6ms)
+  Rendered layouts/_messages.html.erb (1.0ms)
+Completed 200 OK in 7438ms (Views: 7431.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/events.json?start=2017-10-29&end=2017-12-10&_=1511051410810" for ::1 at 2017-11-18 16:30:11 -0800
+Processing by EventsController#index as JSON
+  Parameters: {"start"=>"2017-10-29", "end"=>"2017-12-10", "_"=>"1511051410810"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering events/index.json.jbuilder
+Started GET "/recurring_events.json?start=2017-10-29&end=2017-12-10&_=1511051410811" for ::1 at 2017-11-18 16:30:11 -0800
+Processing by RecurringEventsController#index as JSON
+  Parameters: {"start"=>"2017-10-29", "end"=>"2017-12-10", "_"=>"1511051410811"}
+  [1m[36mEvent Load (6.0ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered events/index.json.jbuilder (11.8ms)
+  [1m[36mUser Load (4.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 73ms (Views: 59.4ms | ActiveRecord: 6.6ms)
+
+
+  Rendering recurring_events/index.json.jbuilder
+  [1m[36mRecurringEvent Load (0.4ms)[0m  [1m[34mSELECT "recurring_events".* FROM "recurring_events" WHERE "recurring_events"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered collection of recurring_events/_recurring_event.json.jbuilder [1 times] (6.7ms)
+  Rendered recurring_events/index.json.jbuilder (11.7ms)
+Completed 200 OK in 68ms (Views: 55.5ms | ActiveRecord: 5.1ms)
+
+
+Started GET "/" for ::1 at 2017-11-18 16:30:27 -0800
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered shared/_footer.html.erb (0.6ms)
+  Rendered home/index.html.erb within layouts/application (9.7ms)
+  Rendered layouts/_messages.html.erb (1.1ms)
+Completed 200 OK in 339ms (Views: 333.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/visitors" for ::1 at 2017-11-18 16:30:51 -0800
+Processing by VisitorsController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering visitors/index.html.erb within layouts/application
+  Rendered shared/_footer.html.erb (2.2ms)
+  Rendered visitors/index.html.erb within layouts/application (22.8ms)
+  Rendered layouts/_messages.html.erb (1.0ms)
+Completed 200 OK in 10833ms (Views: 10827.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/visitors" for ::1 at 2017-11-18 16:31:02 -0800
+Processing by VisitorsController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering visitors/index.html.erb within layouts/application
+  Rendered shared/_footer.html.erb (0.6ms)
+  Rendered visitors/index.html.erb within layouts/application (11.5ms)
+  Rendered layouts/_messages.html.erb (1.9ms)
+Completed 200 OK in 565ms (Views: 537.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/events.json?start=2017-10-29&end=2017-12-10&_=1511051464483" for ::1 at 2017-11-18 16:31:05 -0800
+Processing by EventsController#index as JSON
+  Parameters: {"start"=>"2017-10-29", "end"=>"2017-12-10", "_"=>"1511051464483"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering events/index.json.jbuilder
+  [1m[36mEvent Load (0.5ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered events/index.json.jbuilder (7.8ms)
+Completed 200 OK in 57ms (Views: 48.5ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/recurring_events.json?start=2017-10-29&end=2017-12-10&_=1511051464484" for ::1 at 2017-11-18 16:31:05 -0800
+Processing by RecurringEventsController#index as JSON
+  Parameters: {"start"=>"2017-10-29", "end"=>"2017-12-10", "_"=>"1511051464484"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering recurring_events/index.json.jbuilder
+  [1m[36mRecurringEvent Load (0.6ms)[0m  [1m[34mSELECT "recurring_events".* FROM "recurring_events" WHERE "recurring_events"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered collection of recurring_events/_recurring_event.json.jbuilder [1 times] (9.1ms)
+  Rendered recurring_events/index.json.jbuilder (15.5ms)
+Completed 200 OK in 74ms (Views: 63.9ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/" for ::1 at 2017-11-18 16:33:26 -0800
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered shared/_footer.html.erb (3.6ms)
+  Rendered home/index.html.erb within layouts/application (50.4ms)
+  Rendered layouts/_messages.html.erb (1.6ms)
+Completed 200 OK in 631ms (Views: 626.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2017-11-18 16:34:47 -0800
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered shared/_footer.html.erb (1.2ms)
+  Rendered home/index.html.erb within layouts/application (19.7ms)
+  Rendered layouts/_messages.html.erb (1.0ms)
+Completed 200 OK in 539ms (Views: 531.1ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/visitors" for ::1 at 2017-11-18 16:41:31 -0800
+Processing by VisitorsController#index as HTML
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering visitors/index.html.erb within layouts/application
+  Rendered shared/_footer.html.erb (11.2ms)
+  Rendered visitors/index.html.erb within layouts/application (23.1ms)
+  Rendered layouts/_messages.html.erb (1.1ms)
+Completed 200 OK in 319ms (Views: 311.4ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/recurring_events.json?start=2017-10-29&end=2017-12-10&_=1511051690264" for ::1 at 2017-11-18 16:41:32 -0800
+Processing by RecurringEventsController#index as JSON
+  Parameters: {"start"=>"2017-10-29", "end"=>"2017-12-10", "_"=>"1511051690264"}
+  [1m[36mUser Load (8.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering recurring_events/index.json.jbuilder
+Started GET "/events.json?start=2017-10-29&end=2017-12-10&_=1511051690263" for ::1 at 2017-11-18 16:41:32 -0800
+Processing by EventsController#index as JSON
+  Parameters: {"start"=>"2017-10-29", "end"=>"2017-12-10", "_"=>"1511051690263"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering events/index.json.jbuilder
+  [1m[36mRecurringEvent Load (0.5ms)[0m  [1m[34mSELECT "recurring_events".* FROM "recurring_events" WHERE "recurring_events"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered collection of recurring_events/_recurring_event.json.jbuilder [1 times] (3.9ms)
+  Rendered recurring_events/index.json.jbuilder (122.6ms)
+Completed 200 OK in 199ms (Views: 180.6ms | ActiveRecord: 8.8ms)
+
+
+  [1m[36mEvent Load (8.5ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered events/index.json.jbuilder (21.1ms)
+Completed 200 OK in 102ms (Views: 73.6ms | ActiveRecord: 9.2ms)
+
+
+Started PATCH "/events/18?method=patch" for ::1 at 2017-11-18 16:41:40 -0800
+Processing by EventsController#update as */*
+  Parameters: {"event"=>{"id"=>"18", "start"=>"2017-11-14", "end"=>"2017-11-15"}, "method"=>"patch", "id"=>"18"}
+  [1m[36mEvent Load (0.6ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+Unpermitted parameter: id
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (0.6ms)[0m  [1m[33mUPDATE "events" SET "start" = $1, "end" = $2, "updated_at" = $3 WHERE "events"."id" = $4[0m  [["start", 2017-11-14 00:00:00 UTC], ["end", 2017-11-15 00:00:00 UTC], ["updated_at", 2017-11-19 00:41:40 UTC], ["id", 18]]
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+  Rendering events/update.js.erb
+  Rendered events/_event.json.jbuilder (6.4ms)
+  Rendered events/update.js.erb (46.9ms)
+Completed 200 OK in 169ms (Views: 101.1ms | ActiveRecord: 4.2ms)
+
+
+Started GET "/events/20/edit?_=1511051690265" for ::1 at 2017-11-18 16:41:41 -0800
+Processing by EventsController#edit as JS
+  Parameters: {"_"=>"1511051690265", "id"=>"20"}
+  [1m[36mEvent Load (0.5ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+  Rendering events/edit.js.erb
+  Rendered events/_form.html.erb (47.3ms)
+  Rendered events/_edit.html.erb (97.7ms)
+  Rendered events/edit.js.erb (166.1ms)
+Completed 200 OK in 317ms (Views: 266.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/events/new?_=1511051690266" for ::1 at 2017-11-18 16:41:46 -0800
+Processing by EventsController#new as JS
+  Parameters: {"_"=>"1511051690266"}
+  [1m[36mUser Load (14.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering events/new.js.erb
+  Rendered events/_form.html.erb (44.2ms)
+  Rendered events/_new.html.erb (89.0ms)
+  Rendered events/new.js.erb (159.5ms)
+Completed 200 OK in 304ms (Views: 223.4ms | ActiveRecord: 14.3ms)
+
+
+Started GET "/courses" for ::1 at 2017-11-18 16:43:59 -0800
+Processing by CoursesController#index as HTML
+  Rendering courses/index.html.erb within layouts/application
+  [1m[36mCourse Load (1.4ms)[0m  [1m[34mSELECT "courses".* FROM "courses"[0m
+  Rendered courses/index.html.erb within layouts/application (24.5ms)
+  Rendered layouts/_messages.html.erb (1.0ms)
+Completed 200 OK in 247ms (Views: 231.5ms | ActiveRecord: 5.3ms)
+
+
+Started GET "/courses/1" for ::1 at 2017-11-18 16:44:07 -0800
+Processing by CoursesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCourse Load (0.5ms)[0m  [1m[34mSELECT  "courses".* FROM "courses" WHERE "courses"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering courses/show.html.erb within layouts/application
+  Rendered courses/show.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_messages.html.erb (2.0ms)
+Completed 200 OK in 379ms (Views: 371.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/recurring_events.json?start=2017-10-29&end=2017-12-10&_=1511052241839" for ::1 at 2017-11-18 16:44:07 -0800
+Processing by RecurringEventsController#index as JSON
+  Parameters: {"start"=>"2017-10-29", "end"=>"2017-12-10", "_"=>"1511052241839"}
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering recurring_events/index.json.jbuilder
+Started GET "/events.json?start=2017-10-29&end=2017-12-10&_=1511052241838" for ::1 at 2017-11-18 16:44:07 -0800
+  [1m[36mRecurringEvent Load (1.0ms)[0m  [1m[34mSELECT "recurring_events".* FROM "recurring_events" WHERE "recurring_events"."user_id" = $1[0m  [["user_id", 1]]
+Processing by EventsController#index as JSON
+  Parameters: {"start"=>"2017-10-29", "end"=>"2017-12-10", "_"=>"1511052241838"}
+  Rendered collection of recurring_events/_recurring_event.json.jbuilder [1 times] (4.0ms)
+  Rendered recurring_events/index.json.jbuilder (35.2ms)
+Completed 200 OK in 95ms (Views: 85.3ms | ActiveRecord: 2.4ms)
+
+
+  [1m[36mUser Load (13.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering events/index.json.jbuilder
+  [1m[36mEvent Load (1.3ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered events/index.json.jbuilder (8.1ms)
+Completed 200 OK in 93ms (Views: 60.2ms | ActiveRecord: 15.2ms)
+
+
+Started GET "/courses/1" for ::1 at 2017-11-18 16:45:51 -0800
+Processing by CoursesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCourse Load (0.5ms)[0m  [1m[34mSELECT  "courses".* FROM "courses" WHERE "courses"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering courses/show.html.erb within layouts/application
+  Rendered shared/_footer.html.erb (0.9ms)
+  Rendered courses/show.html.erb within layouts/application (36.8ms)
+  Rendered layouts/_messages.html.erb (1.1ms)
+Completed 200 OK in 467ms (Views: 461.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/events.json?start=2017-10-29&end=2017-12-10&_=1511052354292" for ::1 at 2017-11-18 16:45:55 -0800
+Processing by EventsController#index as JSON
+  Parameters: {"start"=>"2017-10-29", "end"=>"2017-12-10", "_"=>"1511052354292"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering events/index.json.jbuilder
+Started GET "/recurring_events.json?start=2017-10-29&end=2017-12-10&_=1511052354293" for ::1 at 2017-11-18 16:45:55 -0800
+Processing by RecurringEventsController#index as JSON
+  Parameters: {"start"=>"2017-10-29", "end"=>"2017-12-10", "_"=>"1511052354293"}
+  [1m[36mUser Load (2.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering recurring_events/index.json.jbuilder
+  [1m[36mEvent Load (51.2ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."user_id" = $1[0m  [["user_id", 1]]
+  [1m[36mRecurringEvent Load (0.5ms)[0m  [1m[34mSELECT "recurring_events".* FROM "recurring_events" WHERE "recurring_events"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered collection of recurring_events/_recurring_event.json.jbuilder [1 times] (7.9ms)
+  Rendered recurring_events/index.json.jbuilder (13.6ms)
+Completed 200 OK in 59ms (Views: 48.6ms | ActiveRecord: 3.2ms)
+
+
+  Rendered events/index.json.jbuilder (74.8ms)
+Completed 200 OK in 117ms (Views: 58.4ms | ActiveRecord: 51.8ms)
+
+
+Started GET "/courses/1" for ::1 at 2017-11-18 16:46:52 -0800
+Processing by CoursesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCourse Load (1.7ms)[0m  [1m[34mSELECT  "courses".* FROM "courses" WHERE "courses"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering courses/show.html.erb within layouts/application
+  Rendered shared/_footer.html.erb (0.8ms)
+  Rendered courses/show.html.erb within layouts/application (31.9ms)
+  Rendered layouts/_messages.html.erb (1.0ms)
+Completed 200 OK in 457ms (Views: 447.2ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/events.json?start=2017-10-29&end=2017-12-10&_=1511052413464" for ::1 at 2017-11-18 16:46:54 -0800
+Processing by EventsController#index as JSON
+  Parameters: {"start"=>"2017-10-29", "end"=>"2017-12-10", "_"=>"1511052413464"}
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering events/index.json.jbuilder
+Started GET "/recurring_events.json?start=2017-10-29&end=2017-12-10&_=1511052413465" for ::1 at 2017-11-18 16:46:54 -0800
+Processing by RecurringEventsController#index as JSON
+  Parameters: {"start"=>"2017-10-29", "end"=>"2017-12-10", "_"=>"1511052413465"}
+  [1m[36mEvent Load (5.9ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered events/index.json.jbuilder (14.2ms)
+  [1m[36mUser Load (7.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 60ms (Views: 44.8ms | ActiveRecord: 7.9ms)
+
+
+  Rendering recurring_events/index.json.jbuilder
+  [1m[36mRecurringEvent Load (0.4ms)[0m  [1m[34mSELECT "recurring_events".* FROM "recurring_events" WHERE "recurring_events"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered collection of recurring_events/_recurring_event.json.jbuilder [1 times] (5.2ms)
+  Rendered recurring_events/index.json.jbuilder (10.8ms)
+Completed 200 OK in 66ms (Views: 50.2ms | ActiveRecord: 7.4ms)
+
+
+Started GET "/courses/1" for ::1 at 2017-11-18 16:47:51 -0800
+Processing by CoursesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCourse Load (3.7ms)[0m  [1m[34mSELECT  "courses".* FROM "courses" WHERE "courses"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering courses/show.html.erb within layouts/application
+  Rendered shared/_footer.html.erb (1.0ms)
+  Rendered courses/show.html.erb within layouts/application (16.0ms)
+  Rendered layouts/_messages.html.erb (1.8ms)
+Completed 200 OK in 473ms (Views: 459.9ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/events.json?start=2017-10-29&end=2017-12-10&_=1511052474253" for ::1 at 2017-11-18 16:47:55 -0800
+Processing by EventsController#index as JSON
+  Parameters: {"start"=>"2017-10-29", "end"=>"2017-12-10", "_"=>"1511052474253"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering events/index.json.jbuilder
+  [1m[36mEvent Load (0.5ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered events/index.json.jbuilder (14.1ms)
+Started GET "/recurring_events.json?start=2017-10-29&end=2017-12-10&_=1511052474254" for ::1 at 2017-11-18 16:47:55 -0800
+Completed 200 OK in 52ms (Views: 43.8ms | ActiveRecord: 1.1ms)
+
+
+Processing by RecurringEventsController#index as JSON
+  Parameters: {"start"=>"2017-10-29", "end"=>"2017-12-10", "_"=>"1511052474254"}
+  [1m[36mUser Load (3.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering recurring_events/index.json.jbuilder
+  [1m[36mRecurringEvent Load (0.5ms)[0m  [1m[34mSELECT "recurring_events".* FROM "recurring_events" WHERE "recurring_events"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered collection of recurring_events/_recurring_event.json.jbuilder [1 times] (4.2ms)
+  Rendered recurring_events/index.json.jbuilder (10.8ms)
+Completed 200 OK in 62ms (Views: 49.1ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/courses/1" for ::1 at 2017-11-18 16:48:43 -0800
+Processing by CoursesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCourse Load (1.5ms)[0m  [1m[34mSELECT  "courses".* FROM "courses" WHERE "courses"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering courses/show.html.erb within layouts/application
+  Rendered shared/_footer.html.erb (0.6ms)
+  Rendered courses/show.html.erb within layouts/application (5.1ms)
+  Rendered layouts/_messages.html.erb (1.3ms)
+Completed 200 OK in 602ms (Views: 595.1ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/events.json?start=2017-10-29&end=2017-12-10&_=1511052526242" for ::1 at 2017-11-18 16:48:47 -0800
+Processing by EventsController#index as JSON
+  Parameters: {"start"=>"2017-10-29", "end"=>"2017-12-10", "_"=>"1511052526242"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering events/index.json.jbuilder
+  [1m[36mEvent Load (0.3ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered events/index.json.jbuilder (10.3ms)
+Completed 200 OK in 50ms (Views: 41.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/recurring_events.json?start=2017-10-29&end=2017-12-10&_=1511052526243" for ::1 at 2017-11-18 16:48:47 -0800
+Processing by RecurringEventsController#index as JSON
+  Parameters: {"start"=>"2017-10-29", "end"=>"2017-12-10", "_"=>"1511052526243"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering recurring_events/index.json.jbuilder
+  [1m[36mRecurringEvent Load (0.3ms)[0m  [1m[34mSELECT "recurring_events".* FROM "recurring_events" WHERE "recurring_events"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered collection of recurring_events/_recurring_event.json.jbuilder [1 times] (11.6ms)
+  Rendered recurring_events/index.json.jbuilder (21.6ms)
+Completed 200 OK in 83ms (Views: 74.3ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/courses/1" for ::1 at 2017-11-18 16:49:36 -0800
+Processing by CoursesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCourse Load (4.9ms)[0m  [1m[34mSELECT  "courses".* FROM "courses" WHERE "courses"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering courses/show.html.erb within layouts/application
+  Rendered shared/_footer.html.erb (1.2ms)
+  Rendered courses/show.html.erb within layouts/application (8.8ms)
+  Rendered layouts/_messages.html.erb (1.0ms)
+Completed 200 OK in 309ms (Views: 295.0ms | ActiveRecord: 4.9ms)
+
+
+Started GET "/events.json?start=2017-10-29&end=2017-12-10&_=1511052578328" for ::1 at 2017-11-18 16:49:39 -0800
+Started GET "/recurring_events.json?start=2017-10-29&end=2017-12-10&_=1511052578329" for ::1 at 2017-11-18 16:49:39 -0800
+Processing by RecurringEventsController#index as JSON
+  Parameters: {"start"=>"2017-10-29", "end"=>"2017-12-10", "_"=>"1511052578329"}
+Processing by EventsController#index as JSON
+  Parameters: {"start"=>"2017-10-29", "end"=>"2017-12-10", "_"=>"1511052578328"}
+  [1m[36mUser Load (2.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering recurring_events/index.json.jbuilder
+  [1m[36mUser Load (42.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering events/index.json.jbuilder
+  [1m[36mRecurringEvent Load (41.3ms)[0m  [1m[34mSELECT "recurring_events".* FROM "recurring_events" WHERE "recurring_events"."user_id" = $1[0m  [["user_id", 1]]
+  [1m[36mEvent Load (0.5ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered events/index.json.jbuilder (11.6ms)
+Completed 200 OK in 100ms (Views: 45.5ms | ActiveRecord: 43.1ms)
+
+
+  Rendered collection of recurring_events/_recurring_event.json.jbuilder [1 times] (15.8ms)
+  Rendered recurring_events/index.json.jbuilder (62.4ms)
+Completed 200 OK in 111ms (Views: 59.8ms | ActiveRecord: 44.0ms)
+
+
+Started GET "/courses/1" for ::1 at 2017-11-18 16:50:52 -0800
+Processing by CoursesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCourse Load (7.3ms)[0m  [1m[34mSELECT  "courses".* FROM "courses" WHERE "courses"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering courses/show.html.erb within layouts/application
+  Rendered shared/_footer.html.erb (6.9ms)
+  Rendered courses/show.html.erb within layouts/application (13.6ms)
+  Rendered layouts/_messages.html.erb (1.1ms)
+Completed 200 OK in 483ms (Views: 470.8ms | ActiveRecord: 7.3ms)
+
+
+Started GET "/events.json?start=2017-10-29&end=2017-12-10&_=1511052655514" for ::1 at 2017-11-18 16:50:56 -0800
+Started GET "/recurring_events.json?start=2017-10-29&end=2017-12-10&_=1511052655515" for ::1 at 2017-11-18 16:50:56 -0800
+Processing by RecurringEventsController#index as JSON
+  Parameters: {"start"=>"2017-10-29", "end"=>"2017-12-10", "_"=>"1511052655515"}
+Processing by EventsController#index as JSON
+  Parameters: {"start"=>"2017-10-29", "end"=>"2017-12-10", "_"=>"1511052655514"}
+  [1m[36mUser Load (5.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering recurring_events/index.json.jbuilder
+  [1m[36mUser Load (77.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mRecurringEvent Load (5.1ms)[0m  [1m[34mSELECT "recurring_events".* FROM "recurring_events" WHERE "recurring_events"."user_id" = $1[0m  [["user_id", 1]]
+  Rendering events/index.json.jbuilder
+  Rendered collection of recurring_events/_recurring_event.json.jbuilder [1 times] (5.2ms)
+  [1m[36mEvent Load (0.5ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered recurring_events/index.json.jbuilder (52.5ms)
+Completed 200 OK in 141ms (Views: 124.1ms | ActiveRecord: 10.4ms)
+
+
+  Rendered events/index.json.jbuilder (8.6ms)
+Completed 200 OK in 146ms (Views: 56.4ms | ActiveRecord: 77.5ms)
+
+
+Started GET "/courses/1" for ::1 at 2017-11-18 16:51:38 -0800
+Processing by CoursesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCourse Load (1.7ms)[0m  [1m[34mSELECT  "courses".* FROM "courses" WHERE "courses"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering courses/show.html.erb within layouts/application
+  Rendered shared/_footer.html.erb (0.7ms)
+  Rendered courses/show.html.erb within layouts/application (6.7ms)
+  Rendered layouts/_messages.html.erb (0.9ms)
+Completed 200 OK in 359ms (Views: 351.1ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/events.json?start=2017-10-29&end=2017-12-10&_=1511052701284" for ::1 at 2017-11-18 16:51:42 -0800
+Started GET "/recurring_events.json?start=2017-10-29&end=2017-12-10&_=1511052701285" for ::1 at 2017-11-18 16:51:42 -0800
+Processing by EventsController#index as JSON
+Processing by RecurringEventsController#index as JSON
+  Parameters: {"start"=>"2017-10-29", "end"=>"2017-12-10", "_"=>"1511052701285"}
+  Parameters: {"start"=>"2017-10-29", "end"=>"2017-12-10", "_"=>"1511052701284"}
+  [1m[36mUser Load (2.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (5.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering events/index.json.jbuilder
+  Rendering recurring_events/index.json.jbuilder
+  [1m[36mEvent Load (2.3ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."user_id" = $1[0m  [["user_id", 1]]
+  [1m[36mRecurringEvent Load (3.6ms)[0m  [1m[34mSELECT "recurring_events".* FROM "recurring_events" WHERE "recurring_events"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered events/index.json.jbuilder (19.6ms)
+Completed 200 OK in 115ms (Views: 99.8ms | ActiveRecord: 7.5ms)
+
+
+  Rendered collection of recurring_events/_recurring_event.json.jbuilder [1 times] (5.1ms)
+  Rendered recurring_events/index.json.jbuilder (33.0ms)
+Completed 200 OK in 126ms (Views: 62.1ms | ActiveRecord: 6.4ms)
+
+
+Started GET "/courses/1" for ::1 at 2017-11-18 16:52:53 -0800
+Processing by CoursesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCourse Load (3.4ms)[0m  [1m[34mSELECT  "courses".* FROM "courses" WHERE "courses"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering courses/show.html.erb within layouts/application
+  Rendered shared/_footer.html.erb (0.7ms)
+  Rendered courses/show.html.erb within layouts/application (14.9ms)
+  Rendered layouts/_messages.html.erb (0.9ms)
+Completed 200 OK in 335ms (Views: 326.2ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/events.json?start=2017-10-29&end=2017-12-10&_=1511052776008" for ::1 at 2017-11-18 16:52:57 -0800
+Processing by EventsController#index as JSON
+  Parameters: {"start"=>"2017-10-29", "end"=>"2017-12-10", "_"=>"1511052776008"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering events/index.json.jbuilder
+Started GET "/recurring_events.json?start=2017-10-29&end=2017-12-10&_=1511052776009" for ::1 at 2017-11-18 16:52:57 -0800
+Processing by RecurringEventsController#index as JSON
+  Parameters: {"start"=>"2017-10-29", "end"=>"2017-12-10", "_"=>"1511052776009"}
+  [1m[36mEvent Load (5.0ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered events/index.json.jbuilder (13.4ms)
+  [1m[36mUser Load (6.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 56ms (Views: 44.1ms | ActiveRecord: 5.6ms)
+
+
+  Rendering recurring_events/index.json.jbuilder
+  [1m[36mRecurringEvent Load (0.4ms)[0m  [1m[34mSELECT "recurring_events".* FROM "recurring_events" WHERE "recurring_events"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered collection of recurring_events/_recurring_event.json.jbuilder [1 times] (22.4ms)
+  Rendered recurring_events/index.json.jbuilder (30.8ms)
+Completed 200 OK in 122ms (Views: 82.3ms | ActiveRecord: 6.6ms)
+
+
+Started GET "/courses/1" for ::1 at 2017-11-18 16:55:16 -0800
+Processing by CoursesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCourse Load (1.7ms)[0m  [1m[34mSELECT  "courses".* FROM "courses" WHERE "courses"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering courses/show.html.erb within layouts/application
+  Rendered shared/_footer.html.erb (0.7ms)
+  Rendered courses/show.html.erb within layouts/application (24.7ms)
+  Rendered layouts/_messages.html.erb (1.0ms)
+Completed 200 OK in 7064ms (Views: 7057.6ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/recurring_events.json?start=2017-10-29&end=2017-12-10&_=1511052925995" for ::1 at 2017-11-18 16:55:26 -0800
+Started GET "/events.json?start=2017-10-29&end=2017-12-10&_=1511052925994" for ::1 at 2017-11-18 16:55:26 -0800
+Processing by EventsController#index as JSON
+  Parameters: {"start"=>"2017-10-29", "end"=>"2017-12-10", "_"=>"1511052925994"}
+Processing by RecurringEventsController#index as JSON
+  Parameters: {"start"=>"2017-10-29", "end"=>"2017-12-10", "_"=>"1511052925995"}
+  [1m[36mUser Load (3.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering events/index.json.jbuilder
+  [1m[36mUser Load (44.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering recurring_events/index.json.jbuilder
+  [1m[36mRecurringEvent Load (0.4ms)[0m  [1m[34mSELECT "recurring_events".* FROM "recurring_events" WHERE "recurring_events"."user_id" = $1[0m  [["user_id", 1]]
+  [1m[36mEvent Load (44.0ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered events/index.json.jbuilder (50.2ms)
+  Rendered collection of recurring_events/_recurring_event.json.jbuilder [1 times] (4.5ms)
+Completed 200 OK in 108ms (Views: 54.1ms | ActiveRecord: 47.1ms)
+
+
+  Rendered recurring_events/index.json.jbuilder (17.6ms)
+Completed 200 OK in 112ms (Views: 56.8ms | ActiveRecord: 45.3ms)
+
+
+Started GET "/courses/1" for ::1 at 2017-11-18 16:55:47 -0800
+Processing by CoursesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCourse Load (3.6ms)[0m  [1m[34mSELECT  "courses".* FROM "courses" WHERE "courses"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering courses/show.html.erb within layouts/application
+  Rendered shared/_footer.html.erb (0.6ms)
+  Rendered courses/show.html.erb within layouts/application (30.0ms)
+  Rendered layouts/_messages.html.erb (1.2ms)
+Completed 200 OK in 7544ms (Views: 7521.0ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/events.json?start=2017-10-29&end=2017-12-10&_=1511052956239" for ::1 at 2017-11-18 16:55:56 -0800
+Processing by EventsController#index as JSON
+  Parameters: {"start"=>"2017-10-29", "end"=>"2017-12-10", "_"=>"1511052956239"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering events/index.json.jbuilder
+  [1m[36mEvent Load (0.4ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered events/index.json.jbuilder (6.4ms)
+Completed 200 OK in 83ms (Views: 74.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/recurring_events.json?start=2017-10-29&end=2017-12-10&_=1511052956240" for ::1 at 2017-11-18 16:55:56 -0800
+Processing by RecurringEventsController#index as JSON
+  Parameters: {"start"=>"2017-10-29", "end"=>"2017-12-10", "_"=>"1511052956240"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering recurring_events/index.json.jbuilder
+  [1m[36mRecurringEvent Load (0.4ms)[0m  [1m[34mSELECT "recurring_events".* FROM "recurring_events" WHERE "recurring_events"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered collection of recurring_events/_recurring_event.json.jbuilder [1 times] (3.9ms)
+  Rendered recurring_events/index.json.jbuilder (13.7ms)
+Completed 200 OK in 72ms (Views: 63.8ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/courses/1" for ::1 at 2017-11-18 16:56:18 -0800
+Processing by CoursesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCourse Load (1.6ms)[0m  [1m[34mSELECT  "courses".* FROM "courses" WHERE "courses"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering courses/show.html.erb within layouts/application
+  Rendered shared/_footer.html.erb (1.0ms)
+  Rendered courses/show.html.erb within layouts/application (13.4ms)
+  Rendered layouts/_messages.html.erb (1.0ms)
+Completed 200 OK in 8032ms (Views: 8024.8ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/recurring_events.json?start=2017-10-29&end=2017-12-10&_=1511052987429" for ::1 at 2017-11-18 16:56:27 -0800
+Started GET "/events.json?start=2017-10-29&end=2017-12-10&_=1511052987428" for ::1 at 2017-11-18 16:56:27 -0800
+Processing by RecurringEventsController#index as JSON
+  Parameters: {"start"=>"2017-10-29", "end"=>"2017-12-10", "_"=>"1511052987429"}
+Processing by EventsController#index as JSON
+  Parameters: {"start"=>"2017-10-29", "end"=>"2017-12-10", "_"=>"1511052987428"}
+  [1m[36mUser Load (3.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (8.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering recurring_events/index.json.jbuilder
+  Rendering events/index.json.jbuilder
+  [1m[36mRecurringEvent Load (0.6ms)[0m  [1m[34mSELECT "recurring_events".* FROM "recurring_events" WHERE "recurring_events"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered collection of recurring_events/_recurring_event.json.jbuilder [1 times] (3.6ms)
+  Rendered recurring_events/index.json.jbuilder (10.9ms)
+Completed 200 OK in 90ms (Views: 79.0ms | ActiveRecord: 3.8ms)
+
+
+  [1m[36mEvent Load (12.1ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered events/index.json.jbuilder (18.0ms)
+Completed 200 OK in 97ms (Views: 36.8ms | ActiveRecord: 20.8ms)
+
+
+Started GET "/courses/1" for ::1 at 2017-11-18 16:56:44 -0800
+Processing by CoursesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCourse Load (0.4ms)[0m  [1m[34mSELECT  "courses".* FROM "courses" WHERE "courses"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering courses/show.html.erb within layouts/application
+  Rendered shared/_footer.html.erb (0.6ms)
+  Rendered courses/show.html.erb within layouts/application (8.3ms)
+  Rendered layouts/_messages.html.erb (0.9ms)
+Completed 200 OK in 325ms (Views: 320.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/recurring_events.json?start=2017-10-29&end=2017-12-10&_=1511053005241" for ::1 at 2017-11-18 16:56:45 -0800
+Processing by RecurringEventsController#index as JSON
+  Parameters: {"start"=>"2017-10-29", "end"=>"2017-12-10", "_"=>"1511053005241"}
+Started GET "/events.json?start=2017-10-29&end=2017-12-10&_=1511053005240" for ::1 at 2017-11-18 16:56:45 -0800
+Processing by EventsController#index as JSON
+  Parameters: {"start"=>"2017-10-29", "end"=>"2017-12-10", "_"=>"1511053005240"}
+  [1m[36mUser Load (9.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (5.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering events/index.json.jbuilder
+  Rendering recurring_events/index.json.jbuilder
+  [1m[36mRecurringEvent Load (1.8ms)[0m  [1m[34mSELECT "recurring_events".* FROM "recurring_events" WHERE "recurring_events"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered collection of recurring_events/_recurring_event.json.jbuilder [1 times] (6.2ms)
+  Rendered recurring_events/index.json.jbuilder (12.8ms)
+Completed 200 OK in 126ms (Views: 106.1ms | ActiveRecord: 10.8ms)
+
+
+  [1m[36mEvent Load (17.0ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered events/index.json.jbuilder (50.5ms)
+Completed 200 OK in 128ms (Views: 94.7ms | ActiveRecord: 22.3ms)
+
+
+Started GET "/courses/1" for ::1 at 2017-11-18 16:57:31 -0800
+Processing by CoursesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCourse Load (0.3ms)[0m  [1m[34mSELECT  "courses".* FROM "courses" WHERE "courses"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering courses/show.html.erb within layouts/application
+  Rendered shared/_footer.html.erb (1.2ms)
+  Rendered courses/show.html.erb within layouts/application (19.5ms)
+  Rendered layouts/_messages.html.erb (1.4ms)
+Completed 200 OK in 458ms (Views: 451.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/events.json?start=2017-10-29&end=2017-12-10&_=1511053052849" for ::1 at 2017-11-18 16:57:33 -0800
+Processing by EventsController#index as JSON
+  Parameters: {"start"=>"2017-10-29", "end"=>"2017-12-10", "_"=>"1511053052849"}
+Started GET "/recurring_events.json?start=2017-10-29&end=2017-12-10&_=1511053052850" for ::1 at 2017-11-18 16:57:33 -0800
+Processing by RecurringEventsController#index as JSON
+  Parameters: {"start"=>"2017-10-29", "end"=>"2017-12-10", "_"=>"1511053052850"}
+  [1m[36mUser Load (8.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering events/index.json.jbuilder
+  [1m[36mUser Load (43.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering recurring_events/index.json.jbuilder
+  [1m[36mRecurringEvent Load (0.4ms)[0m  [1m[34mSELECT "recurring_events".* FROM "recurring_events" WHERE "recurring_events"."user_id" = $1[0m  [["user_id", 1]]
+  [1m[36mEvent Load (43.1ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered collection of recurring_events/_recurring_event.json.jbuilder [1 times] (4.8ms)
+  Rendered recurring_events/index.json.jbuilder (23.6ms)
+Completed 200 OK in 105ms (Views: 53.8ms | ActiveRecord: 43.6ms)
+
+
+  Rendered events/index.json.jbuilder (59.6ms)
+Completed 200 OK in 117ms (Views: 56.8ms | ActiveRecord: 51.3ms)
+
+
+Started GET "/courses/1" for ::1 at 2017-11-18 17:00:30 -0800
+Processing by CoursesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCourse Load (1.9ms)[0m  [1m[34mSELECT  "courses".* FROM "courses" WHERE "courses"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering courses/show.html.erb within layouts/application
+  Rendered shared/_footer.html.erb (2.3ms)
+  Rendered courses/show.html.erb within layouts/application (12.8ms)
+  Rendered layouts/_messages.html.erb (0.9ms)
+Completed 200 OK in 417ms (Views: 402.3ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/events.json?start=2017-10-29&end=2017-12-10&_=1511053232904" for ::1 at 2017-11-18 17:00:33 -0800
+Processing by EventsController#index as JSON
+  Parameters: {"start"=>"2017-10-29", "end"=>"2017-12-10", "_"=>"1511053232904"}
+  [1m[36mUser Load (3.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering events/index.json.jbuilder
+Started GET "/recurring_events.json?start=2017-10-29&end=2017-12-10&_=1511053232905" for ::1 at 2017-11-18 17:00:33 -0800
+Processing by RecurringEventsController#index as JSON
+  Parameters: {"start"=>"2017-10-29", "end"=>"2017-12-10", "_"=>"1511053232905"}
+  [1m[36mEvent Load (9.7ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."user_id" = $1[0m  [["user_id", 1]]
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered events/index.json.jbuilder (20.2ms)
+Completed 200 OK in 113ms (Views: 90.5ms | ActiveRecord: 13.4ms)
+
+
+  Rendering recurring_events/index.json.jbuilder
+  [1m[36mRecurringEvent Load (0.5ms)[0m  [1m[34mSELECT "recurring_events".* FROM "recurring_events" WHERE "recurring_events"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered collection of recurring_events/_recurring_event.json.jbuilder [1 times] (15.6ms)
+  Rendered recurring_events/index.json.jbuilder (20.5ms)
+Completed 200 OK in 103ms (Views: 84.8ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/" for ::1 at 2017-11-18 17:02:32 -0800
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered shared/_footer.html.erb (0.7ms)
+  Rendered home/index.html.erb within layouts/application (27.6ms)
+  Rendered layouts/_messages.html.erb (1.0ms)
+Completed 200 OK in 407ms (Views: 402.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/visitors" for ::1 at 2017-11-18 17:02:37 -0800
+Processing by VisitorsController#index as HTML
+  [1m[36mUser Load (3.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering visitors/index.html.erb within layouts/application
+  Rendered shared/_footer.html.erb (0.6ms)
+  Rendered visitors/index.html.erb within layouts/application (4.7ms)
+  Rendered layouts/_messages.html.erb (1.1ms)
+Completed 200 OK in 349ms (Views: 338.7ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/recurring_events.json?start=2017-10-29&end=2017-12-10&_=1511053232907" for ::1 at 2017-11-18 17:02:38 -0800
+Processing by RecurringEventsController#index as JSON
+  Parameters: {"start"=>"2017-10-29", "end"=>"2017-12-10", "_"=>"1511053232907"}
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering recurring_events/index.json.jbuilder
+Started GET "/events.json?start=2017-10-29&end=2017-12-10&_=1511053232906" for ::1 at 2017-11-18 17:02:38 -0800
+  [1m[36mRecurringEvent Load (1.2ms)[0m  [1m[34mSELECT "recurring_events".* FROM "recurring_events" WHERE "recurring_events"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered collection of recurring_events/_recurring_event.json.jbuilder [1 times] (4.5ms)
+  Rendered recurring_events/index.json.jbuilder (15.4ms)
+Processing by EventsController#index as JSON
+  Parameters: {"start"=>"2017-10-29", "end"=>"2017-12-10", "_"=>"1511053232906"}
+  [1m[36mUser Load (4.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 123ms (Views: 113.2ms | ActiveRecord: 2.6ms)
+
+
+  Rendering events/index.json.jbuilder
+  [1m[36mEvent Load (1.1ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered events/index.json.jbuilder (84.7ms)
+Completed 200 OK in 200ms (Views: 182.1ms | ActiveRecord: 5.4ms)
+
+
+Started GET "/visitors" for ::1 at 2017-11-18 17:07:40 -0800
+Processing by VisitorsController#index as HTML
+  [1m[36mUser Load (2.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering visitors/index.html.erb within layouts/application
+  Rendered shared/_footer.html.erb (0.7ms)
+  Rendered visitors/index.html.erb within layouts/application (35.1ms)
+  Rendered layouts/_messages.html.erb (1.2ms)
+Completed 200 OK in 488ms (Views: 479.0ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/events.json?start=2017-10-29&end=2017-12-10&_=1511053667004" for ::1 at 2017-11-18 17:07:47 -0800
+Processing by EventsController#index as JSON
+  Parameters: {"start"=>"2017-10-29", "end"=>"2017-12-10", "_"=>"1511053667004"}
+Started GET "/recurring_events.json?start=2017-10-29&end=2017-12-10&_=1511053667005" for ::1 at 2017-11-18 17:07:47 -0800
+Processing by RecurringEventsController#index as JSON
+  Parameters: {"start"=>"2017-10-29", "end"=>"2017-12-10", "_"=>"1511053667005"}
+  [1m[36mUser Load (6.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering events/index.json.jbuilder
+  [1m[36mUser Load (43.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mEvent Load (86.8ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."user_id" = $1[0m  [["user_id", 1]]
+  Rendering recurring_events/index.json.jbuilder
+  Rendered events/index.json.jbuilder (96.1ms)
+Completed 200 OK in 152ms (Views: 52.0ms | ActiveRecord: 93.4ms)
+
+
+  [1m[36mRecurringEvent Load (9.2ms)[0m  [1m[34mSELECT "recurring_events".* FROM "recurring_events" WHERE "recurring_events"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered collection of recurring_events/_recurring_event.json.jbuilder [1 times] (4.1ms)
+  Rendered recurring_events/index.json.jbuilder (18.7ms)
+Completed 200 OK in 163ms (Views: 99.8ms | ActiveRecord: 53.1ms)
+
+
+Started GET "/courses" for ::1 at 2017-11-18 17:09:05 -0800
+Processing by CoursesController#index as HTML
+  Rendering courses/index.html.erb within layouts/application
+  [1m[36mCourse Load (0.4ms)[0m  [1m[34mSELECT "courses".* FROM "courses"[0m
+  Rendered courses/index.html.erb within layouts/application (4.1ms)
+  Rendered layouts/_messages.html.erb (7.0ms)
+Completed 200 OK in 265ms (Views: 259.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/courses/1" for ::1 at 2017-11-18 17:09:10 -0800
+Processing by CoursesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCourse Load (0.9ms)[0m  [1m[34mSELECT  "courses".* FROM "courses" WHERE "courses"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering courses/show.html.erb within layouts/application
+  Rendered shared/_footer.html.erb (0.7ms)
+  Rendered courses/show.html.erb within layouts/application (9.1ms)
+  Rendered layouts/_messages.html.erb (1.0ms)
+Completed 200 OK in 409ms (Views: 403.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/events.json?start=2017-10-29&end=2017-12-10&_=1511053747628" for ::1 at 2017-11-18 17:09:10 -0800
+Processing by EventsController#index as JSON
+  Parameters: {"start"=>"2017-10-29", "end"=>"2017-12-10", "_"=>"1511053747628"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering events/index.json.jbuilder
+Started GET "/recurring_events.json?start=2017-10-29&end=2017-12-10&_=1511053747629" for ::1 at 2017-11-18 17:09:10 -0800
+Processing by RecurringEventsController#index as JSON
+  Parameters: {"start"=>"2017-10-29", "end"=>"2017-12-10", "_"=>"1511053747629"}
+  [1m[36mEvent Load (8.4ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."user_id" = $1[0m  [["user_id", 1]]
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered events/index.json.jbuilder (15.6ms)
+Completed 200 OK in 68ms (Views: 51.1ms | ActiveRecord: 9.0ms)
+
+
+  Rendering recurring_events/index.json.jbuilder
+  [1m[36mRecurringEvent Load (0.4ms)[0m  [1m[34mSELECT "recurring_events".* FROM "recurring_events" WHERE "recurring_events"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered collection of recurring_events/_recurring_event.json.jbuilder [1 times] (5.2ms)
+  Rendered recurring_events/index.json.jbuilder (10.1ms)
+Completed 200 OK in 68ms (Views: 53.9ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/courses/1" for ::1 at 2017-11-18 17:09:58 -0800
+Processing by CoursesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCourse Load (7.7ms)[0m  [1m[34mSELECT  "courses".* FROM "courses" WHERE "courses"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering courses/show.html.erb within layouts/application
+  Rendered shared/_footer.html.erb (0.8ms)
+  Rendered courses/show.html.erb within layouts/application (11.4ms)
+  Rendered layouts/_messages.html.erb (1.0ms)
+Completed 200 OK in 7732ms (Views: 7713.5ms | ActiveRecord: 7.7ms)
+
+
+Started GET "/events.json?start=2017-10-29&end=2017-12-10&_=1511053808144" for ::1 at 2017-11-18 17:10:09 -0800
+Processing by EventsController#index as JSON
+  Parameters: {"start"=>"2017-10-29", "end"=>"2017-12-10", "_"=>"1511053808144"}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering events/index.json.jbuilder
+Started GET "/recurring_events.json?start=2017-10-29&end=2017-12-10&_=1511053808145" for ::1 at 2017-11-18 17:10:09 -0800
+Processing by RecurringEventsController#index as JSON
+  Parameters: {"start"=>"2017-10-29", "end"=>"2017-12-10", "_"=>"1511053808145"}
+  [1m[36mEvent Load (7.3ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."user_id" = $1[0m  [["user_id", 1]]
+  [1m[36mUser Load (5.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered events/index.json.jbuilder (21.7ms)
+Completed 200 OK in 120ms (Views: 102.6ms | ActiveRecord: 8.5ms)
+
+
+  Rendering recurring_events/index.json.jbuilder
+  [1m[36mRecurringEvent Load (0.3ms)[0m  [1m[34mSELECT "recurring_events".* FROM "recurring_events" WHERE "recurring_events"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered collection of recurring_events/_recurring_event.json.jbuilder [1 times] (4.5ms)
+  Rendered recurring_events/index.json.jbuilder (9.9ms)
+Completed 200 OK in 73ms (Views: 52.1ms | ActiveRecord: 5.8ms)
+
+
+Started GET "/" for ::1 at 2017-11-18 17:10:11 -0800
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered shared/_footer.html.erb (0.7ms)
+  Rendered home/index.html.erb within layouts/application (74.6ms)
+  Rendered layouts/_messages.html.erb (1.3ms)
+Completed 200 OK in 466ms (Views: 461.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/visitors" for ::1 at 2017-11-18 17:10:13 -0800
+Processing by VisitorsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering visitors/index.html.erb within layouts/application
+  Rendered shared/_footer.html.erb (8.9ms)
+  Rendered visitors/index.html.erb within layouts/application (44.6ms)
+  Rendered layouts/_messages.html.erb (1.0ms)
+Completed 200 OK in 527ms (Views: 520.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/recurring_events.json?start=2017-10-29&end=2017-12-10&_=1511053808147" for ::1 at 2017-11-18 17:10:15 -0800
+Started GET "/events.json?start=2017-10-29&end=2017-12-10&_=1511053808146" for ::1 at 2017-11-18 17:10:15 -0800
+Processing by EventsController#index as JSON
+  Parameters: {"start"=>"2017-10-29", "end"=>"2017-12-10", "_"=>"1511053808146"}
+Processing by RecurringEventsController#index as JSON
+  Parameters: {"start"=>"2017-10-29", "end"=>"2017-12-10", "_"=>"1511053808147"}
+  [1m[36mUser Load (4.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (87.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering events/index.json.jbuilder
+  Rendering recurring_events/index.json.jbuilder
+  [1m[36mRecurringEvent Load (1.8ms)[0m  [1m[34mSELECT "recurring_events".* FROM "recurring_events" WHERE "recurring_events"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered collection of recurring_events/_recurring_event.json.jbuilder [1 times] (6.4ms)
+  Rendered recurring_events/index.json.jbuilder (24.0ms)
+Completed 200 OK in 211ms (Views: 196.0ms | ActiveRecord: 5.8ms)
+
+
+  [1m[36mEvent Load (0.3ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered events/index.json.jbuilder (65.7ms)
+Completed 200 OK in 264ms (Views: 156.1ms | ActiveRecord: 87.6ms)
+
+
+Started GET "/visitors" for ::1 at 2017-11-18 17:10:51 -0800
+Processing by VisitorsController#index as HTML
+  [1m[36mUser Load (3.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering visitors/index.html.erb within layouts/application
+  Rendered shared/_footer.html.erb (0.7ms)
+  Rendered visitors/index.html.erb within layouts/application (7.4ms)
+  Rendered layouts/_messages.html.erb (1.0ms)
+Completed 200 OK in 8683ms (Views: 8666.2ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/recurring_events.json?start=2017-10-29&end=2017-12-10&_=1511053863676" for ::1 at 2017-11-18 17:11:04 -0800
+Processing by RecurringEventsController#index as JSON
+  Parameters: {"start"=>"2017-10-29", "end"=>"2017-12-10", "_"=>"1511053863676"}
+Started GET "/events.json?start=2017-10-29&end=2017-12-10&_=1511053863675" for ::1 at 2017-11-18 17:11:04 -0800
+Processing by EventsController#index as JSON
+  Parameters: {"start"=>"2017-10-29", "end"=>"2017-12-10", "_"=>"1511053863675"}
+  [1m[36mUser Load (8.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering recurring_events/index.json.jbuilder
+  [1m[36mUser Load (52.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mRecurringEvent Load (31.9ms)[0m  [1m[34mSELECT "recurring_events".* FROM "recurring_events" WHERE "recurring_events"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered collection of recurring_events/_recurring_event.json.jbuilder [1 times] (11.1ms)
+  Rendered recurring_events/index.json.jbuilder (49.1ms)
+Completed 200 OK in 112ms (Views: 65.6ms | ActiveRecord: 40.1ms)
+
+
+  Rendering events/index.json.jbuilder
+  [1m[36mEvent Load (0.4ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered events/index.json.jbuilder (9.6ms)
+Completed 200 OK in 120ms (Views: 56.8ms | ActiveRecord: 52.5ms)
+
+
+Started GET "/visitors" for ::1 at 2017-11-18 17:12:51 -0800
+Processing by VisitorsController#index as HTML
+  [1m[36mUser Load (5.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering visitors/index.html.erb within layouts/application
+  Rendered shared/_footer.html.erb (0.5ms)
+  Rendered visitors/index.html.erb within layouts/application (4.5ms)
+  Rendered layouts/_messages.html.erb (1.1ms)
+Completed 200 OK in 433ms (Views: 422.0ms | ActiveRecord: 5.2ms)
+
+
+Started GET "/events.json?start=2017-10-29&end=2017-12-10&_=1511053973272" for ::1 at 2017-11-18 17:12:53 -0800
+Processing by EventsController#index as JSON
+  Parameters: {"start"=>"2017-10-29", "end"=>"2017-12-10", "_"=>"1511053973272"}
+Started GET "/recurring_events.json?start=2017-10-29&end=2017-12-10&_=1511053973273" for ::1 at 2017-11-18 17:12:53 -0800
+Processing by RecurringEventsController#index as JSON
+  Parameters: {"start"=>"2017-10-29", "end"=>"2017-12-10", "_"=>"1511053973273"}
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering recurring_events/index.json.jbuilder
+  [1m[36mUser Load (48.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mRecurringEvent Load (40.1ms)[0m  [1m[34mSELECT "recurring_events".* FROM "recurring_events" WHERE "recurring_events"."user_id" = $1[0m  [["user_id", 1]]
+  Rendering events/index.json.jbuilder
+  Rendered collection of recurring_events/_recurring_event.json.jbuilder [1 times] (4.0ms)
+  Rendered recurring_events/index.json.jbuilder (91.5ms)
+Completed 200 OK in 150ms (Views: 94.9ms | ActiveRecord: 41.9ms)
+
+
+  [1m[36mEvent Load (3.2ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered events/index.json.jbuilder (10.7ms)
+Completed 200 OK in 163ms (Views: 89.5ms | ActiveRecord: 52.0ms)
+
+
+Started GET "/visitors" for ::1 at 2017-11-18 17:13:53 -0800
+Processing by VisitorsController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering visitors/index.html.erb within layouts/application
+  Rendered shared/_footer.html.erb (1.1ms)
+  Rendered visitors/index.html.erb within layouts/application (65.9ms)
+  Rendered layouts/_messages.html.erb (1.2ms)
+Completed 200 OK in 8859ms (Views: 8849.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/events.json?start=2017-10-29&end=2017-12-10&_=1511054044493" for ::1 at 2017-11-18 17:14:05 -0800
+Processing by EventsController#index as JSON
+  Parameters: {"start"=>"2017-10-29", "end"=>"2017-12-10", "_"=>"1511054044493"}
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Started GET "/recurring_events.json?start=2017-10-29&end=2017-12-10&_=1511054044494" for ::1 at 2017-11-18 17:14:05 -0800
+  Rendering events/index.json.jbuilder
+Processing by RecurringEventsController#index as JSON
+  Parameters: {"start"=>"2017-10-29", "end"=>"2017-12-10", "_"=>"1511054044494"}
+  [1m[36mEvent Load (2.3ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered events/index.json.jbuilder (8.7ms)
+Completed 200 OK in 65ms (Views: 52.0ms | ActiveRecord: 3.7ms)
+
+
+  [1m[36mUser Load (7.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering recurring_events/index.json.jbuilder
+  [1m[36mRecurringEvent Load (0.3ms)[0m  [1m[34mSELECT "recurring_events".* FROM "recurring_events" WHERE "recurring_events"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered collection of recurring_events/_recurring_event.json.jbuilder [1 times] (5.3ms)
+  Rendered recurring_events/index.json.jbuilder (11.1ms)
+Completed 200 OK in 81ms (Views: 64.1ms | ActiveRecord: 7.6ms)
+
+
+Started GET "/visitors" for ::1 at 2017-11-18 17:14:32 -0800
+Processing by VisitorsController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering visitors/index.html.erb within layouts/application
+  Rendered shared/_footer.html.erb (0.6ms)
+  Rendered visitors/index.html.erb within layouts/application (5.1ms)
+  Rendered layouts/_messages.html.erb (9.4ms)
+Completed 200 OK in 7849ms (Views: 7837.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/events.json?start=2017-10-29&end=2017-12-10&_=1511054081705" for ::1 at 2017-11-18 17:14:42 -0800
+Processing by EventsController#index as JSON
+  Parameters: {"start"=>"2017-10-29", "end"=>"2017-12-10", "_"=>"1511054081705"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering events/index.json.jbuilder
+Started GET "/recurring_events.json?start=2017-10-29&end=2017-12-10&_=1511054081706" for ::1 at 2017-11-18 17:14:42 -0800
+Processing by RecurringEventsController#index as JSON
+  Parameters: {"start"=>"2017-10-29", "end"=>"2017-12-10", "_"=>"1511054081706"}
+  [1m[36mEvent Load (5.6ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."user_id" = $1[0m  [["user_id", 1]]
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered events/index.json.jbuilder (12.1ms)
+Completed 200 OK in 125ms (Views: 112.4ms | ActiveRecord: 6.3ms)
+
+
+  Rendering recurring_events/index.json.jbuilder
+  [1m[36mRecurringEvent Load (0.3ms)[0m  [1m[34mSELECT "recurring_events".* FROM "recurring_events" WHERE "recurring_events"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered collection of recurring_events/_recurring_event.json.jbuilder [1 times] (15.6ms)
+  Rendered recurring_events/index.json.jbuilder (21.5ms)
+Completed 200 OK in 98ms (Views: 85.4ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/visitors" for ::1 at 2017-11-18 17:17:06 -0800
+Processing by VisitorsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering visitors/index.html.erb within layouts/application
+  Rendered shared/_footer.html.erb (0.5ms)
+  Rendered visitors/index.html.erb within layouts/application (4.0ms)
+  Rendered layouts/_messages.html.erb (0.9ms)
+Completed 200 OK in 181ms (Views: 174.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/recurring_events.json?start=2017-10-29&end=2017-12-10&_=1511054228340" for ::1 at 2017-11-18 17:17:09 -0800
+Started GET "/events.json?start=2017-10-29&end=2017-12-10&_=1511054228339" for ::1 at 2017-11-18 17:17:09 -0800
+Processing by EventsController#index as JSON
+  Parameters: {"start"=>"2017-10-29", "end"=>"2017-12-10", "_"=>"1511054228339"}
+Processing by RecurringEventsController#index as JSON
+  Parameters: {"start"=>"2017-10-29", "end"=>"2017-12-10", "_"=>"1511054228340"}
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (7.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering events/index.json.jbuilder
+  [1m[36mEvent Load (0.4ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."user_id" = $1[0m  [["user_id", 1]]
+  Rendering recurring_events/index.json.jbuilder
+  Rendered events/index.json.jbuilder (26.2ms)
+Completed 200 OK in 1744ms (Views: 1734.5ms | ActiveRecord: 2.5ms)
+
+
+  [1m[36mRecurringEvent Load (3.0ms)[0m  [1m[34mSELECT "recurring_events".* FROM "recurring_events" WHERE "recurring_events"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered collection of recurring_events/_recurring_event.json.jbuilder [1 times] (5.0ms)
+  Rendered recurring_events/index.json.jbuilder (12.5ms)
+Completed 200 OK in 1752ms (Views: 1735.0ms | ActiveRecord: 10.6ms)
+
+
+Started GET "/visitors" for ::1 at 2017-11-18 17:18:40 -0800
+Processing by VisitorsController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering visitors/index.html.erb within layouts/application
+  Rendered shared/_footer.html.erb (0.7ms)
+  Rendered visitors/index.html.erb within layouts/application (4.8ms)
+  Rendered layouts/_messages.html.erb (2.4ms)
+Completed 200 OK in 7921ms (Views: 7914.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/events.json?start=2017-10-29&end=2017-12-10&_=1511054329915" for ::1 at 2017-11-18 17:18:50 -0800
+Processing by EventsController#index as JSON
+  Parameters: {"start"=>"2017-10-29", "end"=>"2017-12-10", "_"=>"1511054329915"}
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering events/index.json.jbuilder
+  [1m[36mEvent Load (0.4ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered events/index.json.jbuilder (10.0ms)
+Completed 200 OK in 54ms (Views: 42.8ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/recurring_events.json?start=2017-10-29&end=2017-12-10&_=1511054329916" for ::1 at 2017-11-18 17:18:51 -0800
+Processing by RecurringEventsController#index as JSON
+  Parameters: {"start"=>"2017-10-29", "end"=>"2017-12-10", "_"=>"1511054329916"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering recurring_events/index.json.jbuilder
+  [1m[36mRecurringEvent Load (1.1ms)[0m  [1m[34mSELECT "recurring_events".* FROM "recurring_events" WHERE "recurring_events"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered collection of recurring_events/_recurring_event.json.jbuilder [1 times] (5.1ms)
+  Rendered recurring_events/index.json.jbuilder (12.9ms)
+Completed 200 OK in 91ms (Views: 81.7ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/visitors" for ::1 at 2017-11-18 17:19:05 -0800
+Processing by VisitorsController#index as HTML
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering visitors/index.html.erb within layouts/application
+  Rendered shared/_footer.html.erb (0.5ms)
+  Rendered visitors/index.html.erb within layouts/application (4.4ms)
+  Rendered layouts/_messages.html.erb (1.0ms)
+Completed 200 OK in 6885ms (Views: 6877.5ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/events.json?start=2017-10-29&end=2017-12-10&_=1511054352937" for ::1 at 2017-11-18 17:19:13 -0800
+Processing by EventsController#index as JSON
+  Parameters: {"start"=>"2017-10-29", "end"=>"2017-12-10", "_"=>"1511054352937"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering events/index.json.jbuilder
+  [1m[36mEvent Load (0.3ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered events/index.json.jbuilder (5.8ms)
+Completed 200 OK in 49ms (Views: 40.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/recurring_events.json?start=2017-10-29&end=2017-12-10&_=1511054352938" for ::1 at 2017-11-18 17:19:13 -0800
+Processing by RecurringEventsController#index as JSON
+  Parameters: {"start"=>"2017-10-29", "end"=>"2017-12-10", "_"=>"1511054352938"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering recurring_events/index.json.jbuilder
+  [1m[36mRecurringEvent Load (0.3ms)[0m  [1m[34mSELECT "recurring_events".* FROM "recurring_events" WHERE "recurring_events"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered collection of recurring_events/_recurring_event.json.jbuilder [1 times] (4.4ms)
+  Rendered recurring_events/index.json.jbuilder (19.2ms)
+Completed 200 OK in 59ms (Views: 51.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/visitors" for ::1 at 2017-11-18 17:19:33 -0800
+Processing by VisitorsController#index as HTML
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering visitors/index.html.erb within layouts/application
+  Rendered shared/_footer.html.erb (0.7ms)
+  Rendered visitors/index.html.erb within layouts/application (6.7ms)
+  Rendered layouts/_messages.html.erb (1.2ms)
+Completed 200 OK in 7690ms (Views: 7682.9ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/events.json?start=2017-10-29&end=2017-12-10&_=1511054382821" for ::1 at 2017-11-18 17:19:44 -0800
+Processing by EventsController#index as JSON
+  Parameters: {"start"=>"2017-10-29", "end"=>"2017-12-10", "_"=>"1511054382821"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering events/index.json.jbuilder
+Started GET "/recurring_events.json?start=2017-10-29&end=2017-12-10&_=1511054382822" for ::1 at 2017-11-18 17:19:44 -0800
+Processing by RecurringEventsController#index as JSON
+  Parameters: {"start"=>"2017-10-29", "end"=>"2017-12-10", "_"=>"1511054382822"}
+  [1m[36mEvent Load (7.6ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."user_id" = $1[0m  [["user_id", 1]]
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered events/index.json.jbuilder (14.4ms)
+  Rendering recurring_events/index.json.jbuilder
+Completed 200 OK in 111ms (Views: 94.7ms | ActiveRecord: 8.3ms)
+
+
+  [1m[36mRecurringEvent Load (8.6ms)[0m  [1m[34mSELECT "recurring_events".* FROM "recurring_events" WHERE "recurring_events"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered collection of recurring_events/_recurring_event.json.jbuilder [1 times] (4.1ms)
+  Rendered recurring_events/index.json.jbuilder (17.6ms)
+Completed 200 OK in 79ms (Views: 57.8ms | ActiveRecord: 9.3ms)
+
+
+Started GET "/courses" for ::1 at 2017-11-18 17:19:53 -0800
+Processing by CoursesController#index as HTML
+  Rendering courses/index.html.erb within layouts/application
+  [1m[36mCourse Load (0.5ms)[0m  [1m[34mSELECT "courses".* FROM "courses"[0m
+  Rendered courses/index.html.erb within layouts/application (14.6ms)
+  Rendered layouts/_messages.html.erb (1.0ms)
+Completed 200 OK in 295ms (Views: 288.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/courses/1" for ::1 at 2017-11-18 17:19:57 -0800
+Processing by CoursesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCourse Load (0.9ms)[0m  [1m[34mSELECT  "courses".* FROM "courses" WHERE "courses"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering courses/show.html.erb within layouts/application
+  Rendered shared/_footer.html.erb (0.8ms)
+  Rendered courses/show.html.erb within layouts/application (59.0ms)
+  Rendered layouts/_messages.html.erb (1.3ms)
+Completed 200 OK in 373ms (Views: 366.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/recurring_events.json?start=2017-10-29&end=2017-12-10&_=1511054394926" for ::1 at 2017-11-18 17:19:58 -0800
+Processing by RecurringEventsController#index as JSON
+  Parameters: {"start"=>"2017-10-29", "end"=>"2017-12-10", "_"=>"1511054394926"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering recurring_events/index.json.jbuilder
+  [1m[36mRecurringEvent Load (0.4ms)[0m  [1m[34mSELECT "recurring_events".* FROM "recurring_events" WHERE "recurring_events"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered collection of recurring_events/_recurring_event.json.jbuilder [1 times] (4.0ms)
+  Rendered recurring_events/index.json.jbuilder (18.7ms)
+Completed 200 OK in 62ms (Views: 53.0ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/events.json?start=2017-10-29&end=2017-12-10&_=1511054394925" for ::1 at 2017-11-18 17:19:58 -0800
+Processing by EventsController#index as JSON
+  Parameters: {"start"=>"2017-10-29", "end"=>"2017-12-10", "_"=>"1511054394925"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering events/index.json.jbuilder
+  [1m[36mEvent Load (0.3ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered events/index.json.jbuilder (45.9ms)
+Completed 200 OK in 238ms (Views: 194.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/courses/1" for ::1 at 2017-11-18 17:23:03 -0800
+Processing by CoursesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCourse Load (2.5ms)[0m  [1m[34mSELECT  "courses".* FROM "courses" WHERE "courses"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering courses/show.html.erb within layouts/application
+  Rendered shared/_footer.html.erb (1.0ms)
+  Rendered courses/show.html.erb within layouts/application (17.9ms)
+  Rendered layouts/_messages.html.erb (1.1ms)
+Completed 200 OK in 7352ms (Views: 7336.8ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/events.json?start=2017-10-29&end=2017-12-10&_=1511054593106" for ::1 at 2017-11-18 17:23:14 -0800
+Processing by EventsController#index as JSON
+  Parameters: {"start"=>"2017-10-29", "end"=>"2017-12-10", "_"=>"1511054593106"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering events/index.json.jbuilder
+Started GET "/recurring_events.json?start=2017-10-29&end=2017-12-10&_=1511054593107" for ::1 at 2017-11-18 17:23:14 -0800
+Processing by RecurringEventsController#index as JSON
+  Parameters: {"start"=>"2017-10-29", "end"=>"2017-12-10", "_"=>"1511054593107"}
+  [1m[36mEvent Load (4.9ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."user_id" = $1[0m  [["user_id", 1]]
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered events/index.json.jbuilder (17.0ms)
+Completed 200 OK in 106ms (Views: 92.9ms | ActiveRecord: 5.5ms)
+
+
+  Rendering recurring_events/index.json.jbuilder
+  [1m[36mRecurringEvent Load (0.5ms)[0m  [1m[34mSELECT "recurring_events".* FROM "recurring_events" WHERE "recurring_events"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered collection of recurring_events/_recurring_event.json.jbuilder [1 times] (4.2ms)
+  Rendered recurring_events/index.json.jbuilder (9.4ms)
+Completed 200 OK in 71ms (Views: 53.2ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/visitors" for ::1 at 2017-11-18 17:23:19 -0800
+Processing by VisitorsController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering visitors/index.html.erb within layouts/application
+  Rendered shared/_footer.html.erb (0.7ms)
+  Rendered visitors/index.html.erb within layouts/application (74.9ms)
+  Rendered layouts/_messages.html.erb (0.9ms)
+Completed 200 OK in 276ms (Views: 269.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/events.json?start=2017-10-29&end=2017-12-10&_=1511054593108" for ::1 at 2017-11-18 17:23:20 -0800
+Processing by EventsController#index as JSON
+  Parameters: {"start"=>"2017-10-29", "end"=>"2017-12-10", "_"=>"1511054593108"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Started GET "/recurring_events.json?start=2017-10-29&end=2017-12-10&_=1511054593109" for ::1 at 2017-11-18 17:23:20 -0800
+Processing by RecurringEventsController#index as JSON
+  Parameters: {"start"=>"2017-10-29", "end"=>"2017-12-10", "_"=>"1511054593109"}
+  [1m[36mUser Load (3.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering recurring_events/index.json.jbuilder
+  [1m[36mRecurringEvent Load (44.0ms)[0m  [1m[34mSELECT "recurring_events".* FROM "recurring_events" WHERE "recurring_events"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered collection of recurring_events/_recurring_event.json.jbuilder [1 times] (5.2ms)
+  Rendered recurring_events/index.json.jbuilder (55.0ms)
+Completed 200 OK in 108ms (Views: 54.0ms | ActiveRecord: 47.3ms)
+
+
+  Rendering events/index.json.jbuilder
+  [1m[36mEvent Load (0.7ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered events/index.json.jbuilder (6.7ms)
+Completed 200 OK in 146ms (Views: 131.8ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/visitors" for ::1 at 2017-11-18 17:24:05 -0800
+Processing by VisitorsController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering visitors/index.html.erb within layouts/application
+  Rendered shared/_footer.html.erb (0.9ms)
+  Rendered visitors/index.html.erb within layouts/application (9.5ms)
+  Rendered layouts/_messages.html.erb (1.4ms)
+Completed 200 OK in 376ms (Views: 369.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/events.json?start=2017-10-29&end=2017-12-10&_=1511054648533" for ::1 at 2017-11-18 17:24:09 -0800
+Processing by EventsController#index as JSON
+  Parameters: {"start"=>"2017-10-29", "end"=>"2017-12-10", "_"=>"1511054648533"}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering events/index.json.jbuilder
+Started GET "/recurring_events.json?start=2017-10-29&end=2017-12-10&_=1511054648534" for ::1 at 2017-11-18 17:24:09 -0800
+Processing by RecurringEventsController#index as JSON
+  Parameters: {"start"=>"2017-10-29", "end"=>"2017-12-10", "_"=>"1511054648534"}
+  [1m[36mEvent Load (6.5ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."user_id" = $1[0m  [["user_id", 1]]
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered events/index.json.jbuilder (19.0ms)
+Completed 200 OK in 155ms (Views: 139.3ms | ActiveRecord: 7.8ms)
+
+
+  Rendering recurring_events/index.json.jbuilder
+  [1m[36mRecurringEvent Load (0.3ms)[0m  [1m[34mSELECT "recurring_events".* FROM "recurring_events" WHERE "recurring_events"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered collection of recurring_events/_recurring_event.json.jbuilder [1 times] (3.9ms)
+  Rendered recurring_events/index.json.jbuilder (12.4ms)
+Completed 200 OK in 67ms (Views: 48.3ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/courses" for ::1 at 2017-11-18 17:24:19 -0800
+Processing by CoursesController#index as HTML
+  Rendering courses/index.html.erb within layouts/application
+  [1m[36mCourse Load (1.4ms)[0m  [1m[34mSELECT "courses".* FROM "courses"[0m
+  Rendered courses/index.html.erb within layouts/application (4.7ms)
+  Rendered layouts/_messages.html.erb (1.0ms)
+Completed 200 OK in 231ms (Views: 224.5ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/courses/1" for ::1 at 2017-11-18 17:24:22 -0800
+Processing by CoursesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCourse Load (1.1ms)[0m  [1m[34mSELECT  "courses".* FROM "courses" WHERE "courses"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering courses/show.html.erb within layouts/application
+  Rendered shared/_footer.html.erb (0.7ms)
+  Rendered courses/show.html.erb within layouts/application (18.8ms)
+  Rendered layouts/_messages.html.erb (0.9ms)
+Completed 200 OK in 338ms (Views: 331.0ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/recurring_events.json?start=2017-10-29&end=2017-12-10&_=1511054659958" for ::1 at 2017-11-18 17:24:22 -0800
+Processing by RecurringEventsController#index as JSON
+  Parameters: {"start"=>"2017-10-29", "end"=>"2017-12-10", "_"=>"1511054659958"}
+  [1m[36mUser Load (3.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering recurring_events/index.json.jbuilder
+  [1m[36mRecurringEvent Load (0.4ms)[0m  [1m[34mSELECT "recurring_events".* FROM "recurring_events" WHERE "recurring_events"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered collection of recurring_events/_recurring_event.json.jbuilder [1 times] (4.2ms)
+  Rendered recurring_events/index.json.jbuilder (15.3ms)
+Started GET "/events.json?start=2017-10-29&end=2017-12-10&_=1511054659957" for ::1 at 2017-11-18 17:24:22 -0800
+Completed 200 OK in 65ms (Views: 54.6ms | ActiveRecord: 3.4ms)
+
+
+Processing by EventsController#index as JSON
+  Parameters: {"start"=>"2017-10-29", "end"=>"2017-12-10", "_"=>"1511054659957"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering events/index.json.jbuilder
+  [1m[36mEvent Load (3.8ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered events/index.json.jbuilder (17.1ms)
+Completed 200 OK in 84ms (Views: 63.4ms | ActiveRecord: 4.4ms)
+
+
