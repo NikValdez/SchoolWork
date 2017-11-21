@@ -1,5 +1,10 @@
 Rails.application.routes.draw do
-  resources :courses
+  resources :courses do 
+    collection do 
+      get :autocomplete
+    end
+  end
+
   devise_for :users, controllers: { omniauth_callbacks: 'users/omniauth_callbacks' }
   get 'auth/:provider/callback', to: 'sessions#create'
   get 'auth/failure', to: redirect('/')

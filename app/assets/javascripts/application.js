@@ -17,6 +17,7 @@
 //= require moment
 //= require fullcalendar
 //= require daterangepicker
+//= require typeahead.bundle
 //= require_tree .
 
 

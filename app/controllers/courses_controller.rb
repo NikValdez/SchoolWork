@@ -3,8 +3,14 @@ class CoursesController < ApplicationController
 
   # GET /courses
   # GET /courses.json
-  def index
-    @courses = Course.all
+   def index
+    search = params[:term].present? ? params[:term] : nil
+    @courses = if search
+      Course.where("title LIKE ? OR prof LIKE ?", "%#{search}%", "%#{search}%")
+       # Course.search(search)
+    else
+      Course.all
+    end
   end
 
   # GET /courses/1
@@ -59,6 +65,17 @@ class CoursesController < ApplicationController
       format.html { redirect_to courses_url, notice: 'Course was successfully destroyed.' }
       format.json { head :no_content }
     end
+  end
+
+
+   def autocomplete
+    render json: Course.search(params[:query], {
+      fields: ["title^5", "prof"],
+      match: :word_start,
+      limit: 10,
+      load: false,
+      misspellings: {below: 5}
+    }).map(&:title)
   end
 
   private
