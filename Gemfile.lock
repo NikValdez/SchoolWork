@@ -91,6 +91,8 @@ GEM
       multipart-post (>= 1.2, < 3)
     ffaker (2.7.0)
     ffi (1.9.14)
+    font-awesome-rails (4.7.0.2)
+      railties (>= 3.2, < 5.2)
     formatador (0.2.5)
     globalid (0.3.7)
       activesupport (>= 4.1.0)
@@ -283,8 +285,8 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  better_errors (~> 2.1, >= 2.1.1)
-  binding_of_caller (~> 0.7.2)
+  better_errors
+  binding_of_caller
   bootstrap-sass
   byebug
   capybara
@@ -294,6 +296,7 @@ DEPENDENCIES
   factory_bot
   faker
   ffaker
+  font-awesome-rails
   guard-rspec
   ice_cube
   jbuilder (~> 2.0)
