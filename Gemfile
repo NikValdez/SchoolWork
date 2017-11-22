@@ -14,6 +14,7 @@ gem 'devise-bootstrapped'
 gem "omniauth-google-oauth2"
 gem "font-awesome-rails"
 gem 'searchkick'
+gem 'kaminari'
 source 'https://rails-assets.org' do
   gem 'rails-assets-fullcalendar'
   gem 'rails-assets-momentjs'

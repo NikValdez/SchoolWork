@@ -9,7 +9,8 @@ class CoursesController < ApplicationController
       Course.where("title LIKE ? OR prof LIKE ?", "%#{search}%", "%#{search}%")
        # Course.search
     else
-      Course.all
+       Course.page(params[:page]).per(5).order(created_at: :desc)
+
     end
   end
 
