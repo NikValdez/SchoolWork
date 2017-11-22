@@ -7,7 +7,7 @@ class CoursesController < ApplicationController
     search = params[:term].present? ? params[:term] : nil
     @courses = if search
       Course.where("title LIKE ? OR prof LIKE ?", "%#{search}%", "%#{search}%")
-       # Course.search(search)
+       # Course.search
     else
       Course.all
     end

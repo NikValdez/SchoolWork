@@ -1,9 +1,25 @@
-<div class="container">
 <p id="notice"><%= notice %></p>
+<header id="header">
+    <div class="container">
 
-<h1>Courses</h1>
+      <div id="logo" class="pull-left">
+        <!-- <a href="#hero"><img src="img/logo.png" alt="" title="Courses" /></img></a> -->
+        <!-- Uncomment below if you prefer to use a text logo -->
+        <h1><a href="#hero">Courses</a></h1>
+      </div>
 
-<table>
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          <li><a href="/">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#services">Services</a></li>
+          <li class="menu-active"><a href="/visitors">Profs</a></li>
+        </ul>
+      </nav><!-- #nav-menu-container -->
+    </div>
+  </header><!-- #header -->
+
+<table class="course-table">
   <thead>
     <tr>
       <th>Title</th>
@@ -13,6 +29,8 @@
   </thead>
 
   <tbody>
+    <div class="container">
+<h1 class="courses">Course List</h1>
 <div class="col-lg-4 col-lg-offset-4">
   <%= form_tag(courses_path, method: :get, class: "form-inline", role: 'search') do %>
     <div class="input-group">              
@@ -20,17 +38,17 @@
           params[:term], 
           id: 'courses_search', 
           autocomplete: :off, 
-          placeholder: 'Search', 
+          placeholder: 'Search Courses', 
           class: 'form-control' %>
       <div class="input-group-btn search-panel">
-        <%= link_to 'Clear', root_url, class: "btn btn-default" %>
         <%= submit_tag 'Search', name: nil, class: "btn btn-default"%>
       </div>
     </div>
 </div>
+</div>
 <% end %>
     <% @courses.each do |course| %>
-      <tr>
+      <tr class="course-list">
         <td><%= course.title %></td>
         <td><%= course.prof %></td>
         <td><%= link_to 'Show', course %></td>
@@ -40,6 +58,7 @@
     <% end %>
   </tbody>
 </table>
+
 
 <br>
 
