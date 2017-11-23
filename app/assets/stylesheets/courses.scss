@@ -143,3 +143,11 @@ td, th {
   background: #2dc997 !important;
   border-color: #c25975 !important;
 }
+
+
+a {
+  color: #c25975 !important;
+  &:hover {
+  color: #2dc997 !important;
+  }
+}

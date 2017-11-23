@@ -49,8 +49,8 @@
 <% end %>
     <% @courses.each do |course| %>
       <tr class="course-list">
-        <td><%= course.title %></td>
-        <td><%= course.prof %></td>
+        <td><%= link_to course.title, course %></td>
+        <td><%= link_to course.prof, course %></td>
         <td><%= link_to 'Show', course %></td>
         <td><%= link_to 'Edit', edit_course_path(course) %></td>
         <td><%= link_to 'Destroy', course, method: :delete, data: { confirm: 'Are you sure?' } %></td>
