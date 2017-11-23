@@ -116,12 +116,30 @@ span.twitter-typeahead {
   font-size: 20px;
   color: #c25975;
 }
+.table-body {
+  background: #F5F4F4;
+}
 
 .course-list {
   border: 1px solid;
-  background: light-gray;
 }
 
 td, th {
-    padding: 10px;
+    padding: 10px !important;
+}
+
+
+/*--------------------------------------------------------------
+# Kaminari
+--------------------------------------------------------------*/
+
+.pagination > li > a, .pagination > li > span {
+  color: #c25975 !important;
+  border-color: #c25975 !important;
+}
+
+
+.pagination > .active > a, .pagination > .active > a:hover, .pagination > .active > a:focus, .pagination > .active > span, .pagination > .active > span:hover, .pagination > .active > span:focus {
+  background: #2dc997 !important;
+  border-color: #c25975 !important;
 }

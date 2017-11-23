@@ -1,3 +1,4 @@
+<div data-turbolinks="false">
 <%= paginator.render do -%>
   <ul class="pagination">
     <%= first_page_tag unless current_page.first? %>
@@ -13,3 +14,4 @@
     <%= last_page_tag unless current_page.last? %>
   </ul>
 <% end -%>
+</div>

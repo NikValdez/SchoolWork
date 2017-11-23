@@ -6,10 +6,10 @@ class CoursesController < ApplicationController
    def index
     search = params[:term].present? ? params[:term] : nil
     @courses = if search
-      Course.where("title LIKE ? OR prof LIKE ?", "%#{search}%", "%#{search}%")
+      Course.where("title LIKE ? OR prof LIKE ?", "%#{search}%", "%#{search}%").page(params[:page]).per(10).order(created_at: :desc)
        # Course.search
     else
-       Course.page(params[:page]).per(5).order(created_at: :desc)
+       Course.page(params[:page]).per(10).order(created_at: :desc)
 
     end
   end
