@@ -1,4 +1,13 @@
 Rails.application.routes.draw do
+  namespace :admin do
+    resources :users
+    resources :courses
+    resources :events
+    resources :recurring_events
+
+    root to: "users#index"
+  end
+
   resources :courses do 
     collection do 
       get :autocomplete

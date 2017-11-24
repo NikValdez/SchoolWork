@@ -15,6 +15,7 @@ gem "omniauth-google-oauth2"
 gem "font-awesome-rails"
 gem 'searchkick'
 gem 'kaminari'
+gem 'administrate'
 source 'https://rails-assets.org' do
   gem 'rails-assets-fullcalendar'
   gem 'rails-assets-momentjs'
