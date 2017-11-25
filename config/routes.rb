@@ -4,6 +4,8 @@ Rails.application.routes.draw do
     resources :courses
     resources :events
     resources :recurring_events
+    resources :admin_users
+  
 
     root to: "users#index"
   end
