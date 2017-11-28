@@ -87,6 +87,10 @@ input[type="submit"], .btn-default{
     }
 }
 
+.btn-danger{
+    color: white !important;
+}
+
 
 /*--------------------------------------------------------------
 # Course Title 
@@ -95,3 +99,28 @@ input[type="submit"], .btn-default{
 .course-title {
     margin-top: 10em;
 }
+
+
+
+/*--------------------------------------------------------------
+# Sweet Alert Popup
+--------------------------------------------------------------*/
+
+.show-swal2 {
+    background: #2dc997 !important;
+}
+
+.swal2-modal h2 {
+    color: #c25975 !important;
+}
+
+
+.swal2-modal .styled {
+    background: #c25975 !important;
+}
+
+.swal2-icon.swal2-warning  {
+    color: #c25975 !important;
+}
+
+

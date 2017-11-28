@@ -1,7 +1,9 @@
 class Event < ApplicationRecord
   validates :title, presence: true
   attr_accessor :date_range
+  # belongs_to :course
   belongs_to :user
+
  
 
   def all_day_event?

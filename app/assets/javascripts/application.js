@@ -18,6 +18,8 @@
 //= require fullcalendar
 //= require daterangepicker
 //= require typeahead.bundle
+//= require sweetalert2
+//= require sweet-alert2-rails
 //= require_tree .
 
 

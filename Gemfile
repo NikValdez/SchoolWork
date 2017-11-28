@@ -10,15 +10,16 @@ gem 'jquery-rails'
 gem 'turbolinks', '~> 5.x'
 gem 'jbuilder', '~> 2.0'
 gem 'devise'
-gem 'devise-bootstrapped'
 gem "omniauth-google-oauth2"
 gem "font-awesome-rails"
 gem 'searchkick'
 gem 'kaminari'
 gem 'administrate'
+gem 'sweet-alert2-rails'
 source 'https://rails-assets.org' do
   gem 'rails-assets-fullcalendar'
   gem 'rails-assets-momentjs'
+  gem 'rails-assets-sweetalert2'
 end
 
 gem 'ice_cube'
