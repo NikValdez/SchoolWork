@@ -4,7 +4,7 @@ Rails.application.routes.draw do
     resources :courses
     resources :events
     resources :recurring_events
-    resources :admin_users
+
   
 
     root to: "users#index"
@@ -24,7 +24,6 @@ Rails.application.routes.draw do
   resource :home, only: [:index]
 
   root to: "home#index"
-
   resources :events
   resources :recurring_events
   resources :visitors

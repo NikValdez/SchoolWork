@@ -25,6 +25,7 @@ class UserDashboard < Administrate::BaseDashboard
     updated_at: Field::DateTime,
     provider: Field::String,
     uid: Field::String,
+    admin: Field::Boolean,
   }.freeze
 
   # COLLECTION_ATTRIBUTES
@@ -33,10 +34,12 @@ class UserDashboard < Administrate::BaseDashboard
   # By default, it's limited to four items to reduce clutter on index pages.
   # Feel free to add, remove, or rearrange items.
   COLLECTION_ATTRIBUTES = [
-    :events,
-    :recurring_events,
-    :id,
+    # :events,
+    # :recurring_events,
+    # :id,
     :email,
+    :created_at,
+    :admin,
   ].freeze
 
   # SHOW_PAGE_ATTRIBUTES
@@ -59,26 +62,28 @@ class UserDashboard < Administrate::BaseDashboard
     :updated_at,
     :provider,
     :uid,
+    :admin
   ].freeze
 
   # FORM_ATTRIBUTES
   # an array of attributes that will be displayed
   # on the model's form (`new` and `edit`) pages.
   FORM_ATTRIBUTES = [
-    :events,
-    :recurring_events,
+    # :events,
+    # :recurring_events,
     :email,
+    :admin,
     :encrypted_password,
-    :reset_password_token,
-    :reset_password_sent_at,
-    :remember_created_at,
-    :sign_in_count,
-    :current_sign_in_at,
-    :last_sign_in_at,
-    :current_sign_in_ip,
-    :last_sign_in_ip,
-    :provider,
-    :uid,
+    # :reset_password_token,
+    # :reset_password_sent_at,
+    # :remember_created_at,
+    # :sign_in_count,
+    # :current_sign_in_at,
+    # :last_sign_in_at,
+    # :current_sign_in_ip,
+    # :last_sign_in_ip,
+    # :provider,
+    # :uid,
   ].freeze
 
   # Overwrite this method to customize how users are displayed
