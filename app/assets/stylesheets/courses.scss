@@ -120,9 +120,6 @@ span.twitter-typeahead {
   background: #F5F4F4;
 }
 
-.course-list {
-  border: 1px solid;
-}
 
 td, th {
     padding: 10px !important;
@@ -150,4 +147,10 @@ a {
   &:hover {
   color: #2dc997 !important;
   }
+}
+
+
+
+.course-title {
+  color: #2dc997;  
 }

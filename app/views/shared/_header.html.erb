@@ -1,0 +1,28 @@
+ <header id="header">
+    <div class="container">
+
+      <div id="logo" class="pull-left">
+        <!-- <a href="#hero"><img src="img/logo.png" alt="" title="Courses" /></img></a> -->
+        <!-- Uncomment below if you prefer to use a text logo -->
+        <h1><a href="#hero">Courses</a></h1>
+      </div>
+
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          <li class="menu-active"><a href="/">Home</a></li>
+          <li data-turbolinks="false"><%= link_to "Courses", courses_path %></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="/visitors">Profs</a></li>
+          <li> <% if user_signed_in? %>
+          <li>
+          <%= link_to('Logout', destroy_user_session_path, method: :delete, class: "google") %>        
+          </li>
+        <% else %>
+          <li>
+          <%= link_to('Login', new_user_session_path, class: "google")  %>  
+          </li>
+        <% end %>
+        </ul>
+      </nav><!-- #nav-menu-container -->
+    </div>
+  </header><!-- #header -->
