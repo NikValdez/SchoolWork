@@ -9,9 +9,11 @@ module Admin
     before_action :authenticate_admin
 
     def authenticate_admin
-      # TODO Add authentication logic here.
-    end
-
+      unless current_user.try(:admin?)
+        flash[:alert] = "Sorry dude, you ain't got that sort of access."
+        redirect_to(root_path)
+  end
+end
     # Override this value to specify the number of elements to display at a time
     # on index pages. Defaults to 20.
     # def records_per_page
