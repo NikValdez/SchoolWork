@@ -26,6 +26,8 @@ class UserDashboard < Administrate::BaseDashboard
     provider: Field::String,
     uid: Field::String,
     admin: Field::Boolean,
+    password: PasswordField,
+    password_confirmation: PasswordField,
   }.freeze
 
   # COLLECTION_ATTRIBUTES
@@ -74,6 +76,8 @@ class UserDashboard < Administrate::BaseDashboard
     :email,
     :admin,
     :encrypted_password,
+    :password,
+    :password_confirmation,
     # :reset_password_token,
     # :reset_password_sent_at,
     # :remember_created_at,
