@@ -25,7 +25,7 @@ By default, it renders:
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <%= render 'shared/header' %>
+  <%= render 'layouts/header' %>
   <%= render "icons" %>
 
   <div class="app-container">
@@ -40,3 +40,19 @@ By default, it renders:
   <%= render "javascript" %>
 </body>
 </html>
+
+<style>
+  #admin-header {
+    background: #c25975;
+    color: #2dc997;
+    padding: 15px;
+  }
+  a {
+    color: #2dc997;
+    text-decoration: none;
+  }
+
+  .google {
+    float: right;
+  }
+</style>
