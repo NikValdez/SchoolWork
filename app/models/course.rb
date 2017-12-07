@@ -12,6 +12,7 @@
 
 class Course < ApplicationRecord
 	has_many :events, dependent: :destroy
+	has_many :assignments, dependent: :destroy
 	searchkick word_start: [:title, :prof]
 
  def search_data

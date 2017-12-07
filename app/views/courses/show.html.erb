@@ -1,34 +1,35 @@
 <p id="notice"><%= notice %></p>
 <% title "Schedule" %>
 <section>
-	<header id="header">
-	    <div class="container">
-
-	      <div id="logo" class="pull-left">
-	        <!-- <a href="#hero"><img src="img/logo.png" alt="" title="Courses" /></img></a> -->
-	        <!-- Uncomment below if you prefer to use a text logo -->
-	        <h1><a href="#hero">Courses</a></h1>
-	      </div>
-
-	      <nav id="nav-menu-container">
-	        <ul class="nav-menu">
-	          <li><a href="/">Home</a></li>
-	          <li><a href="#about">About Us</a></li>
-	          <li><a href="#services">Services</a></li>
-	          <li class="menu-active"><a href="/visitors">Profs</a></li>
-	        </ul>
-	      </nav><!-- #nav-menu-container -->
-	    </div>
-	  </header><!-- #header -->
+	<%= render 'shared/header' %>
   </section>
-  <div class="container">
-	  <div class="course-title">
+  <div class="course-title">
 	  <p><i class="fa fa-pencil-square-o fa-lg"></i> <%= @course.title %></p>
-	  <p><i class="fa fa-user fa-lg"></i> <%= @course.prof %></p>
+	  <p class="course-prof"><i class="fa fa-user fa-lg"></i> <%= @course.prof %></p>
   </div>
+  <div class="row">
+  	<div class="col-md-8">
 	<div class="calendar"></div>
   </div>
+  <div class="col-md-4">
+    <% if @assignments.blank? %>
+            <h3>No Assignments just yet, would you like to add the first!</h3>
+            <%= link_to "Create an Assignment", new_course_assignment_path(@course), class: "btn btn-primary" %>
+          <% else %>
+            <% @assignments.each do |assignment| %>
+              <div class="assignments">
+                <p>Assignment: <%= assignment.name %></p>
+                <p>Description: <%= assignment.description %></p>
+                <p>Due Date: <%= assignment.due_date %></p>
+                <br>
+              </div>
+            <% end %>
+          <% end %>
 
 <%= link_to 'Edit', edit_course_path(@course) %> |
 <%= link_to 'Back', courses_path %>
+
+  </div>
+  	</div>
+  
 

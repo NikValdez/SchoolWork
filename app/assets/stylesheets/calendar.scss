@@ -13,9 +13,10 @@
     box-shadow: none;
 }
 body .fc {
-    border: 35px solid #c25975;
+    border: 5px solid #c25975;
     border-top: none;
     border-radius: 5px;
+    margin-left: 1em;
 }
 .fc .fc-button-group > * {
     background: #2dc997;
@@ -42,6 +43,10 @@ body .fc {
 
 .fc-title {
     color: #fff !important;
+}
+
+.fc-popover .fc-header .fc-title {
+    color: #c25975 !important;
 }
 
 #cal-header {
@@ -97,7 +102,7 @@ input[type="submit"], .btn-default{
 --------------------------------------------------------------*/
 
 .course-title {
-    margin-top: 10em;
+    margin-top: 5em;
 }
 
 
