@@ -1,0 +1,17 @@
+<script>
+ var daterange;
+daterange = function() {
+  $('.daterange').each(function(){
+    $(this).daterangepicker({
+        timePicker: true,
+        singleDatePicker: true,
+        timePickerIncrement: 30,
+        alwaysShowCalendars: true
+    }, function(start, label) {
+      $('.start_hidden').val(start.format('YYYY-MM-DD HH:mm'));
+      
+    });
+  })
+};
+$(document).on('turbolinks:load', daterange);
+</script>

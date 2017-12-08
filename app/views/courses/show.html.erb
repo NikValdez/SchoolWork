@@ -4,7 +4,7 @@
 	<%= render 'shared/header' %>
   </section>
   <div class="course-title">
-	  <p><i class="fa fa-pencil-square-o fa-lg"></i> <%= @course.title %></p>
+	  <p class=course-heading><i class="fa fa-pencil-square-o fa-lg"></i> <%= @course.title %></p>
 	  <p class="course-prof"><i class="fa fa-user fa-lg"></i> <%= @course.prof %></p>
   </div>
   <div class="row">
@@ -16,7 +16,7 @@
             <h3>No Assignments at this moment</h3>
             <%= link_to "Create an Assignment", new_course_assignment_path(@course), class: "btn btn-primary btn-block btn-lg" %>
           <% else %>
-          <h2>Assignments</h2>
+          <h2 class="assignments-heading">Assignments</h2>
             <% @assignments.each do |assignment| %>
               <div class="assignments">
                 <p>Assignment: <%= assignment.name %></p>
@@ -26,9 +26,11 @@
               </div>
             <% end %>
           <% end %>
+          <%= paginate @assignments %>
 
 <%= link_to 'Edit', edit_course_path(@course) %> |
 <%= link_to 'Back', courses_path %>
+<%= link_to 'New Assignment', new_course_assignment_path(@course) %>
 
   </div>
   	</div>

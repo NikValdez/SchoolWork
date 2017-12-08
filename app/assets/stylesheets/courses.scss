@@ -169,8 +169,18 @@ a {
   padding: 5px;
   &:hover {
     font-size: 24px;
+    box-shadow: 8px 10px 20px 0px rgba(46,61,73,0.15);
   }
 }
 
+.assignment-title {
+  text-align: center;
+  color: #c25975; 
+}
 
+
+.assignments-heading {
+  color: #2dc997;
+  margin-top: 0;
+}
 
