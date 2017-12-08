@@ -158,3 +158,19 @@ a {
   font-size: 14px;
   color: #c25975;
 }
+
+/*--------------------------------------------------------------
+# Assignments
+--------------------------------------------------------------*/
+
+.assignments {
+  border: 1px solid #c25975;
+  margin-right: 15px;
+  padding: 5px;
+  &:hover {
+    font-size: 24px;
+  }
+}
+
+
+
