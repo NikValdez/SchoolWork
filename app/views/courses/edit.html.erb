@@ -1,6 +1,9 @@
-<h1>Editing Course</h1>
+<%= render 'shared/header' %>
+<div class="container">
+<h1 class="course-title">Editing Course</h1>
 
 <%= render 'form', course: @course %>
+</div>
 
 <%= link_to 'Show', @course %> |
 <%= link_to 'Back', courses_path %>

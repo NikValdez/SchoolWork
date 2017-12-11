@@ -20,8 +20,9 @@
             <% @assignments.each do |assignment| %>
               <div class="assignments">
                 <p>Assignment: <%= assignment.name %></p>
-                <p>Description: <%= assignment.description %></p>
+                <p>Description: <%= sanitize(assignment.description.truncate(100))%></p>
                 <p>Due Date: <%= assignment.due_date %></p>
+                <%= link_to "show", course_assignment_path(@course) %>
                 <br>
               </div>
             <% end %>

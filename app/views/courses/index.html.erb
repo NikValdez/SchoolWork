@@ -1,13 +1,11 @@
 <p id="notice"><%= notice %></p>
 <header id="header">
     <div class="container">
-
       <div id="logo" class="pull-left">
         <!-- <a href="#hero"><img src="img/logo.png" alt="" title="Courses" /></img></a> -->
         <!-- Uncomment below if you prefer to use a text logo -->
         <h1><a href="#hero">Courses</a></h1>
       </div>
-
       <nav id="nav-menu-container">
         <ul class="nav-menu">
           <li><a href="/">Home</a></li>
@@ -18,16 +16,12 @@
       </nav><!-- #nav-menu-container -->
     </div>
   </header><!-- #header -->
-
 <table class="course-table">
   <thead>
     <tr>
-      <th>Title</th>
-      <th>Professor</th>
       <th colspan="3"></th>
     </tr>
   </thead>
-
   <tbody class="table-body"
     <div class="container">
 <h1 class="courses">Course List</h1>
@@ -47,12 +41,11 @@
 </div>
 </div>
 <% end %>
-
 <div class="container">
- <div id="project-list" class="row home-projects">
+ <div id="course-list" class="row course-projects">
     <% @courses.each do |course| %>
-      <div class="col-md-4 project-col">
-        <%= link_to(course, class: "project-card") do %>
+      <div class="col-md-4 course-col">
+        <%= link_to(course, class: "course-card") do %>
           <h4><%= course.title %></h4>
           <% if course.prof  %>
             <p><%= course.prof %></p>
@@ -61,8 +54,6 @@
       </div>
     <% end %>
   </div>
-
-
   <div class="text-center">
     <%= paginate @courses %>
   </div>

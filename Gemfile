@@ -15,6 +15,7 @@ gem "font-awesome-rails"
 gem 'searchkick'
 gem 'kaminari'
 gem 'administrate'
+gem 'trix'
 gem 'sweet-alert2-rails'
 source 'https://rails-assets.org' do
   gem 'rails-assets-fullcalendar'

@@ -11,6 +11,7 @@ class AssignmentsController < ApplicationController
   # GET /assignments/1
   # GET /assignments/1.json
   def show
+    @assignment = Assignment.find(params[:id])
   end
 
   # GET /assignments/new
