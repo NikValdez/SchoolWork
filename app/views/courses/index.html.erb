@@ -49,6 +49,7 @@
           <h4><%= course.title %></h4>
           <% if course.prof  %>
             <p><%= course.prof %></p>
+            <%= link_to 'Destroy', course, method: :delete, data: { confirm: 'Are you sure?' } %>
           <% end %>
          <% end %>
       </div>
@@ -59,6 +60,7 @@
   </div>
   <% if current_user.admin? %>
   <%= link_to 'New Course', new_course_path %>
+
    <% else %>
   <% end %>
   </div>

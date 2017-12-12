@@ -54,12 +54,16 @@ class AssignmentsController < ApplicationController
   # DELETE /assignments/1
   # DELETE /assignments/1.json
   def destroy
+     @course = Course.find(params[:course_id])
+     @assignment = Assignment.find(params[:id])
+
     @assignment.destroy
     respond_to do |format|
-      format.html { redirect_to assignments_url, notice: 'Assignment was successfully destroyed.' }
+      format.html { redirect_to courses_path, notice: 'Assignment was successfully destroyed.' }
       format.json { head :no_content }
     end
   end
+
 
   private
     # Use callbacks to share common setup or constraints between actions.

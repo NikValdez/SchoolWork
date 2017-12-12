@@ -19,10 +19,11 @@
           <h2 class="assignments-heading">Assignments</h2>
             <% @assignments.each do |assignment| %>
               <div class="assignments">
-                <p>Assignment: <%= assignment.name %></p>
+                <p><%= link_to "Assignment: #{assignment.name} ", course_assignment_path(@course, assignment) %></p>
                 <p>Description: <%= sanitize(assignment.description.truncate(100))%></p>
                 <p>Due Date: <%= assignment.due_date %></p>
-                <%= link_to "show", course_assignment_path(@course) %>
+                <%= link_to "show", course_assignment_path(@course, assignment) %>
+                <p><%= link_to 'Destroy', course_assignment_path(@course, assignment), method: :delete, data: { confirm: 'Are you sure?' } %></p>
                 <br>
               </div>
             <% end %>
