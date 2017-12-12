@@ -46,10 +46,11 @@
     <% @courses.each do |course| %>
       <div class="col-md-4 course-col">
         <%= link_to(course, class: "course-card") do %>
-          <h4><%= course.title %></h4>
-          <% if course.prof  %>
+          <h4><%= course.title %></h4>     
             <p><%= course.prof %></p>
-            <%= link_to 'Destroy', course, method: :delete, data: { confirm: 'Are you sure?' } %>
+            <% if current_user.admin? %>
+              <%= link_to 'Delete', course, method: :delete, data: { confirm: 'Are you sure?' } %>
+             <% else %>
           <% end %>
          <% end %>
       </div>
@@ -60,7 +61,6 @@
   </div>
   <% if current_user.admin? %>
   <%= link_to 'New Course', new_course_path %>
-
    <% else %>
   <% end %>
   </div>
