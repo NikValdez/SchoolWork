@@ -268,5 +268,33 @@ a {
 
   }
  }
+#assignment-card {
+  display: none;
+}
+.assignment-button {
+  background: #2dc997;
+  border-radius: 5px;
+  color: #fff;
+  padding: 5px;
+  padding-right: 20px;
+  margin-left: 10px;
+  &:hover {
+  box-shadow: 0 5px 5px #aa9c84;
+
+  }
+}
+
+
+/*--------------------------------------------------------------
+# Trix editor
+--------------------------------------------------------------*/
+
+trix-editor {
+  height: 200px;
+  overflow: scroll;
+}
+
+
+
 
 
