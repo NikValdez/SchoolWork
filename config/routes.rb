@@ -4,9 +4,6 @@ Rails.application.routes.draw do
     resources :courses
     resources :events
     resources :recurring_events
-
-  
-
     root to: "users#index"
   end
 
@@ -14,7 +11,7 @@ Rails.application.routes.draw do
     collection do 
       get :autocomplete
     end
-    resources :assignments, except: [:index]
+    resources :assignments, except: [:index, :new]
   end
 
   devise_for :users, controllers: { omniauth_callbacks: 'users/omniauth_callbacks' }

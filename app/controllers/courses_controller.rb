@@ -5,6 +5,7 @@ class CoursesController < ApplicationController
   # GET /courses
   # GET /courses.json
    def index
+    @course = Course.new
     search = params[:term].present? ? params[:term] : nil
     @courses = if search
       Course.where("title LIKE ? OR prof LIKE ?", "%#{search}%", "%#{search}%").page(params[:page]).per(12).order(:title)

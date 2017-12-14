@@ -59,7 +59,7 @@ class AssignmentsController < ApplicationController
 
     @assignment.destroy
     respond_to do |format|
-      format.html { redirect_to courses_path, notice: 'Assignment was successfully destroyed.' }
+      format.html { redirect_to @course, notice: 'Assignment was successfully destroyed.' }
       format.json { head :no_content }
     end
   end
