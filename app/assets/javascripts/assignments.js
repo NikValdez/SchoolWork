@@ -3,3 +3,12 @@ document.addEventListener('turbolinks:load', function () {
     $("#assignment-card").toggle();
  });
 })
+
+
+document.addEventListener('turbolinks:load', function () {
+  $("#exit").click(function(){
+    $("#assignment-card").toggle();
+ });
+})
+
+

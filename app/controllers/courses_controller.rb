@@ -18,7 +18,7 @@ class CoursesController < ApplicationController
   # GET /courses/1
   # GET /courses/1.json
   def show
-    @assignments = Assignment.where(course_id: @course.id).page(params[:page]).per(5).order("created_at DESC")
+    @assignments = Assignment.where(course_id: @course.id).page(params[:page]).per(4).order("created_at DESC")
     @assignment = Assignment.new
   end
 

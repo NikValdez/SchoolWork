@@ -167,6 +167,7 @@ a {
 --------------------------------------------------------------*/
 
 .assignments {
+  text-align: center;
   border: 1px solid #c25975;
   margin-right: 15px;
   padding: 5px;
@@ -187,6 +188,12 @@ a {
   margin-top: 0;
 }
 
+#exit {
+  float: right;
+  &:hover {
+    box-shadow: 0 5px 5px #aa9c84;
+  }
+}
 
 
 /*--------------------------------------------------------------
@@ -214,10 +221,6 @@ a {
   }
  }
 
- .course-show-col {
-  margin-bottom: 5rem;
-  margin-top: 2em;
-}
 
 .course-show-card {
   display: block;
@@ -228,8 +231,9 @@ a {
   padding: 3rem;
   padding-top: 2rem;
   height: 100%;
-  margin-top: 15rem;
   float: none;
+  z-index: 999;
+ margin-top: 5px;
 
   &:hover {
     text-decoration: none;
@@ -238,6 +242,12 @@ a {
 
   }
  }
+
+trix-toolbar .trix-button-group {
+  display: inline;
+}
+
+
 
 /*--------------------------------------------------------------
 # Search bar
@@ -283,6 +293,30 @@ a {
 
   }
 }
+
+
+.assignment-show-card {
+  display: block;
+  color: #283c46;
+  background-color: #fff;
+  box-shadow: 0 1px 2px #aa9c84;
+  border-radius: 6px;
+  padding: 3rem;
+  padding-top: 2rem;
+  height: 100%;
+  float: none;
+  z-index: 999;
+  margin-top: 15em;
+  margin-bottom: 2em;
+
+  &:hover {
+    text-decoration: none;
+    color: #283c46;
+    box-shadow: 0 5px 5px #aa9c84;
+
+  }
+ }
+  
 
 
 /*--------------------------------------------------------------
