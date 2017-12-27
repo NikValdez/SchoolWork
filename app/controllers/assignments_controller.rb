@@ -27,7 +27,7 @@ class AssignmentsController < ApplicationController
   # POST /assignments.json
   def create
     @assignment = Assignment.new(assignment_params)
-    @assignment.course_id = @course.id
+    @assignment = @course.assignments.create(assignment_params)
 
    if @assignment.save
       redirect_to @course

@@ -458,7 +458,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .loginBtn--google {
   /*font-family: "Roboto", Roboto, arial, sans-serif;*/
-  background: rgba(221, 75, 57, 0.57);
+  background: #2dc997cc;
 }
 .loginBtn--google:before {
   border-right: #BB3F30 1px solid;
@@ -466,8 +466,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 .loginBtn--google:hover,
 .loginBtn--google:focus {
-  background: #E74B37;
-  box-shadow: 12px 15px 20px rgba(206, 50, 31, 0.22);
+  background: #c25975;
+  box-shadow: 12px 15px 20px #c2597569;
 }
 
 #sign_in {

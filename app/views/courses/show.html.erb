@@ -21,7 +21,7 @@
           <h2 class="assignments-heading">Assignments</h2>
             <% @assignments.each do |assignment| %>
               <div class="assignments">
-               <%= link_to course_assignment_path(@course, assignment) do %> 
+               <%= link_to course_assignment_path(@course, assignment) do %>
                 <p>Name: <%= assignment.name %></p>
                 <p>Description: <%= sanitize(assignment.description.truncate(100))%></p>
                 <p>Due Date: <%= assignment.due_date %></p>
@@ -34,25 +34,24 @@
               </div>
             <% end %>
           <% end %>
-          <%= paginate @assignments %>
-<% if current_user.admin? %>
-  <%= link_to 'Edit', edit_course_path(@course) %> |
-  <%= link_to 'Back', courses_path %>
-  <button type="button" class="assignment-button"><%= image_tag("plus-icon") %> New </button>
-  <div class="container">
-  <div id="assignment-card">
-    <div class="col-md-4 col-md-offset-0 course-show-col">
-      <div class="course-show-card">
-        <div id="exit"><%= image_tag("exit.png") %></div>
-        <h1 class="assignment-title">New Assignment</h1>
-          <%= render 'assignment', course: @course %>
-           <%= link_to 'Back', course_path(@course) %>
-    </div>
-  </div>
-</div> 
-  </div>
+      <%= paginate @assignments %>
+		<% if current_user.admin? %>
+		  <%= link_to 'Edit', edit_course_path(@course) %> |
+		  <%= link_to 'Back', courses_path %>
+		  <button type="button" class="assignment-button"><%= image_tag("plus-icon") %> New </button>
+		  <div class="container">
+		  <div id="assignment-card">
+		    <div class="col-md-4 col-md-offset-0 course-show-col">
+		      <div class="course-show-card">
+		        <div id="exit"><%= image_tag("exit.png") %></div>
+		        <h1 class="assignment-title">New Assignment</h1>
+		          <%= render 'assignment', course: @course %>
+		           <%= link_to 'Back', course_path(@course) %>
+				    </div>
+				  </div>
+				</div>
+		  </div>
  <% else %>
 <% end %>
   </div>
 </div>
-

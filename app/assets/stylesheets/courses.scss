@@ -150,7 +150,7 @@ a {
 }
 
 .course-title {
-  color: #2dc997;  
+  color: #2dc997;
   text-align: center;
   font-size: 30px;
 }
@@ -160,10 +160,10 @@ a {
 }
 
 .course-name {
-  color: #2dc997;  
+  color: #2dc997;
   text-align: center;
   font-size: 30px;
-  
+
 }
 
 
@@ -185,7 +185,7 @@ a {
 
 .assignment-title {
   text-align: center;
-  color: #c25975; 
+  color: #c25975;
 }
 
 
@@ -227,26 +227,25 @@ a {
   }
  }
 
+ .course-show-col {
+   display: block;
+   color: #283c46;
+   background-color: #fff;
+   box-shadow: 0 1px 2px #aa9c84;
+   border-radius: 6px;
+   padding: 3rem;
+   padding-top: 2rem;
+   height: 100%;
+   float: none;
+   z-index: 999;
+   margin-top: 5px;
 
-.course-show-card {
-  display: block;
-  color: #283c46;
-  background-color: #fff;
-  box-shadow: 0 1px 2px #aa9c84;
-  border-radius: 6px;
-  padding: 3rem;
-  padding-top: 2rem;
-  height: 100%;
-  float: none;
-  z-index: 999;
- margin-top: 5px;
+   &:hover {
+     text-decoration: none;
+     color: #283c46;
+     box-shadow: 0 5px 5px #aa9c84;
 
-  &:hover {
-    text-decoration: none;
-    color: #283c46;
-    box-shadow: 0 5px 5px #aa9c84;
-
-  }
+   }
  }
 
 trix-toolbar .trix-button-group {
@@ -322,7 +321,7 @@ trix-toolbar .trix-button-group {
 
   }
  }
-  
+
 
 
 /*--------------------------------------------------------------
@@ -333,8 +332,3 @@ trix-editor {
   height: 200px;
   overflow: scroll;
 }
-
-
-
-
-

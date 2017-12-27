@@ -43,9 +43,10 @@ group :development do
   gem 'better_errors'
   gem 'binding_of_caller'
   gem 'annotate', '~> 2.7', '>= 2.7.1'
+  gem 'guard', '~> 2.14', '>= 2.14.1'
+  gem 'guard-livereload', '~> 2.5', '>= 2.5.2', require: false
 end
 
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'simple_form'
 gem 'faker'
-
