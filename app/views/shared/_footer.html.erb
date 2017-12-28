@@ -9,9 +9,9 @@
     </div>
   </div>
   <div class="col-md-3 col-md-offset-1">
-	<% if current_user.admin? %>
+	<% if current_user && current_user.admin? %>
 	 	<%= link_to 'Admin', admin_root_path, class: "btn btn-default"%>
 	 	 <% else %>
 	  <% end %>
- </div>	
+ </div>
 </footer><!-- #footer -->

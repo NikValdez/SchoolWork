@@ -1,0 +1,13 @@
+<div id="note">
+  <div class="user-name">
+
+  </div>
+  <div class="note-content">
+    <%= note.content %>
+  </div>
+  <% if note.user == current_user %>
+    <%= link_to course_assignment_note_path(@course, assignment, note), method: :delete, data: {assignment_id: assignment.id, value: assignment.notes.count, confirm: "Are you sure?" }, remote: true do %>
+      <span class="glyphicon glyphicon-remove delete-note-icon"></span>
+    <% end %>
+  <% end %>
+</div>

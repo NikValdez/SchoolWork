@@ -1,13 +1,16 @@
 <%= render 'shared/header' %>
 <main class="container home">
+
 	<div class="col-md-6 col-md-offset-3 assignment-show-card">
+		<div class="time-ago">
+			Added <%= time_ago_in_words @assignment.created_at %> ago
+		</div>
 	    <h4><%= @assignment.name %></h4>
 	    <p>Due Date: <%= @assignment.due_date %></p>
 	     <p>Description: <%= sanitize(@assignment.description) %></p>
 	     </div>
 	</div>
 </main>
-
 <% if current_user.admin? %>
 <div class="col-md-6 col-md-offset-3">
 	<div class="btn btn-default ">
@@ -15,4 +18,8 @@
 	  <% else %>
 	<% end %>
 	</div>
+</div>
+
+	<div class="col-md-4 col-md-offset-8">
+		<%= render 'assignment', assignment: @assignment %>
 </div>

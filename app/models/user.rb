@@ -17,11 +17,13 @@
 #  updated_at             :datetime         not null
 #  provider               :string
 #  uid                    :string
+#  admin                  :boolean
 #
 
 class User < ApplicationRecord
 	has_many :events
 	has_many :recurring_events
+	has_many :notes, dependent: :destroy
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable, :registerable,
@@ -42,5 +44,3 @@ class User < ApplicationRecord
 end
 
 end
-
-

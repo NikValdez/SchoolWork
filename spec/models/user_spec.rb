@@ -17,6 +17,7 @@
 #  updated_at             :datetime         not null
 #  provider               :string
 #  uid                    :string
+#  admin                  :boolean
 #
 
 require 'rails_helper'

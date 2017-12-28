@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171208183942) do
+ActiveRecord::Schema.define(version: 20171227191147) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -47,6 +47,16 @@ ActiveRecord::Schema.define(version: 20171208183942) do
     t.index ["user_id"], name: "index_events_on_user_id", using: :btree
   end
 
+  create_table "notes", force: :cascade do |t|
+    t.integer  "user_id"
+    t.integer  "assignment_id"
+    t.text     "content"
+    t.datetime "created_at",    null: false
+    t.datetime "updated_at",    null: false
+    t.index ["assignment_id"], name: "index_notes_on_assignment_id", using: :btree
+    t.index ["user_id"], name: "index_notes_on_user_id", using: :btree
+  end
+
   create_table "recurring_events", force: :cascade do |t|
     t.string   "title"
     t.date     "anchor"
@@ -80,5 +90,7 @@ ActiveRecord::Schema.define(version: 20171208183942) do
 
   add_foreign_key "assignments", "courses"
   add_foreign_key "events", "courses"
+  add_foreign_key "notes", "assignments"
+  add_foreign_key "notes", "users"
   add_foreign_key "recurring_events", "users"
 end

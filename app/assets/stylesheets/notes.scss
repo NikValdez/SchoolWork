@@ -1,0 +1,42 @@
+.note_content {
+  font-size: 15px;
+  width: 100%;
+  color: #4B4F54;
+  border: none;
+  background: transparent;
+  &:hover{
+    border-radius: 3px;
+    margin-bottom: 5px;
+
+  }
+}
+
+.assignments-wrapper {
+  display: block;
+  color: #283c46;
+  background-color: #fff;
+  box-shadow: 0 1px 2px #aa9c84;
+  border-radius: 6px;
+  padding: 1.5rem;
+  height: 100%;
+
+  &:hover {
+    text-decoration: none;
+    color: #283c46;
+    box-shadow: 0 5px 5px #aa9c84;
+
+  }
+}
+
+
+#notes {
+  margin-top: 7px;
+  margin-bottom: 7px;
+  padding-top: 24px;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: 10px;
+  font-size: 15px;
+  line-height: 18px;
+
+}
