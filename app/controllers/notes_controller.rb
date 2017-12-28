@@ -15,20 +15,26 @@ end
     @note.user_id = current_user.id
 
     if @note.save
-      flash[:success] = "You added a note!"
-      redirect_to :back
+      respond_to do |format|
+        format.html { redirect_to root_path }
+        format.js
+      end
     else
-      flash[:alert] = "Check the note form, something went horribly wrong."
+      flash[:alert] = "Check the note form, something went wrong."
       render root_path
     end
   end
 
   def destroy
-  @note = @assignment.notes.find(params[:id])
+    @note = @assignment.notes.find(params[:id])
 
-  @note.destroy
-  flash[:success] = "Note deleted :("
-  redirect_to :back
+    if @note.user_id == current_user.id
+      @note.destroy
+      respond_to do |format|
+        format.html { redirect_to root_path }
+        format.js
+      end
+    end
 end
 
   private

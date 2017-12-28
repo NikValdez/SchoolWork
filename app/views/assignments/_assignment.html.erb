@@ -1,14 +1,12 @@
+<%= form_for([assignment, assignment.notes.build], remote: true) do |f| %>
+    <%= f.text_area :content, placeholder: 'Add a note...', class: "note_content", id: "note_content_#{assignment.id}" %>
+    <%= f.submit "Add" %>
+<% end %>
 
-    <%= form_for([@course, assignment, assignment.notes.build], remote: true) do |f| %>
-      <%= f.text_area :content, placeholder: 'Add a note...', class: "note_content" %>
+<div class="assignments-wrapper">
+    <div class="notes" id="notes_<%= assignment.id %>">
+    <% if assignment.notes %>
+      <%= render assignment.notes, assignment: assignment %>
     <% end %>
-
-  <div class="assignments-wrapper">
-    <div class="notes" id="notes">
-      <% if assignment.notes %>
-        <%= render assignment.notes, assignment: assignment %>
-      <% end %>
-    </div>
   </div>
-</div>
 </div>

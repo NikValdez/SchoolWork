@@ -11,9 +11,10 @@ Rails.application.routes.draw do
     collection do
       get :autocomplete
     end
-    resources :assignments, except: [:index, :new] do
-      resources :notes
-    end
+    resources :assignments, except: [:index, :new]
+  end
+  resources :assignments, except: [:index, :new] do
+    resources :notes
   end
 
   devise_for :users, controllers: { omniauth_callbacks: 'users/omniauth_callbacks' }

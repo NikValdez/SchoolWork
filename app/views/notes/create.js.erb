@@ -1,2 +1,2 @@
-$('#notes_<%= @assignment.id %>').append("<%=j render 'notes/notes', assignment: @assignment, notes: @notes %>");
-$('#comment_content_<%= @assignment.id %>').val('')
+$('#notes_<%= @assignment.id %>').append("<%=j render 'notes/note', assignment: @assignment, note: @note %>");
+$('#note_content_<%= @assignment.id %>').val('')
