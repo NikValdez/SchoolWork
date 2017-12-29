@@ -497,3 +497,21 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 99999;
 
 }
+
+
+/*--------------------------------------------------------------
+# Sign-in/up
+--------------------------------------------------------------*/
+
+.registration-bg {
+  background-image: image-url('classroom.jpg');
+  background-size: cover;
+  padding-top: 4em;
+  height: 56em;
+}
+
+.sign-form {
+  background: #fff;
+  border-radius: 3px;
+  padding-bottom: 30px;
+}

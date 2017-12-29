@@ -6,7 +6,7 @@
   background: transparent;
   &:hover{
     border-radius: 3px;
-    margin-bottom: 5px;
+    margin-bottom: 15px;
 
   }
 }
@@ -39,4 +39,9 @@
   font-size: 15px;
   line-height: 18px;
 
+}
+
+.delete-comment-icon {
+  float: left;
+  margin-right: 5px;
 }
